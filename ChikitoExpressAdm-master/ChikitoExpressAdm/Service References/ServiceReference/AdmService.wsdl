@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdmService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdmService_PostPais_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostPais" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostPais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostPaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostMunicipio_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostMunicipio" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostMunicipio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostMunicipioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PosProvencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:PosProvencia" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PosProvencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PosProvenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostZona_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostZona" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostZona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostZonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostDireccion_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostDireccion" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostDireccion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostDireccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostPersona" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostUser" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostUserRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostAdministrador_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostAdministrador" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostAdministrador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostAdministradorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetViewAdm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewAdm" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetViewAdm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewAdmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetProvencias_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvencias" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetProvencias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPaises_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaises" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPaises_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaisesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetAdm_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdm" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetAdm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPersonas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonas" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPersonas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetUsersRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersRoles" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetUsersRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoles" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetZonas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZonas" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetZonas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZonasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetMunicipios_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMunicipios" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetMunicipios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMunicipiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetDirecciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDirecciones" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetDirecciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDireccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_RetirarPais_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarPais" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_RetirarPais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetirarPaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarPais_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarPais" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarPais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarPaisResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdmService">
+    <wsdl:operation name="PostPais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostPais" message="tns:IAdmService_PostPais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostPaisResponse" message="tns:IAdmService_PostPais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostMunicipio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostMunicipio" message="tns:IAdmService_PostMunicipio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostMunicipioResponse" message="tns:IAdmService_PostMunicipio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PosProvencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PosProvencia" message="tns:IAdmService_PosProvencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PosProvenciaResponse" message="tns:IAdmService_PosProvencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostZona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostZona" message="tns:IAdmService_PostZona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostZonaResponse" message="tns:IAdmService_PostZona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostDireccion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostDireccion" message="tns:IAdmService_PostDireccion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostDireccionResponse" message="tns:IAdmService_PostDireccion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostPersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostPersona" message="tns:IAdmService_PostPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostPersonaResponse" message="tns:IAdmService_PostPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostRole" message="tns:IAdmService_PostRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostRoleResponse" message="tns:IAdmService_PostRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostUser" message="tns:IAdmService_PostUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostUserResponse" message="tns:IAdmService_PostUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostUserRole" message="tns:IAdmService_PostUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostUserRoleResponse" message="tns:IAdmService_PostUserRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostAdministrador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostAdministrador" message="tns:IAdmService_PostAdministrador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostAdministradorResponse" message="tns:IAdmService_PostAdministrador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewAdm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetViewAdm" message="tns:IAdmService_GetViewAdm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetViewAdmResponse" message="tns:IAdmService_GetViewAdm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProvencias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetProvencias" message="tns:IAdmService_GetProvencias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetProvenciasResponse" message="tns:IAdmService_GetProvencias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaises">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetPaises" message="tns:IAdmService_GetPaises_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetPaisesResponse" message="tns:IAdmService_GetPaises_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetAdm" message="tns:IAdmService_GetAdm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetAdmResponse" message="tns:IAdmService_GetAdm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetPersonas" message="tns:IAdmService_GetPersonas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetPersonasResponse" message="tns:IAdmService_GetPersonas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetUsers" message="tns:IAdmService_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetUsersResponse" message="tns:IAdmService_GetUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetUsersRoles" message="tns:IAdmService_GetUsersRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetUsersRolesResponse" message="tns:IAdmService_GetUsersRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetRoles" message="tns:IAdmService_GetRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetRolesResponse" message="tns:IAdmService_GetRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZonas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetZonas" message="tns:IAdmService_GetZonas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetZonasResponse" message="tns:IAdmService_GetZonas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMunicipios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetMunicipios" message="tns:IAdmService_GetMunicipios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetMunicipiosResponse" message="tns:IAdmService_GetMunicipios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDirecciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetDirecciones" message="tns:IAdmService_GetDirecciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetDireccionesResponse" message="tns:IAdmService_GetDirecciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetirarPais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/RetirarPais" message="tns:IAdmService_RetirarPais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/RetirarPaisResponse" message="tns:IAdmService_RetirarPais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/ActualizarPais" message="tns:IAdmService_ActualizarPais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/ActualizarPaisResponse" message="tns:IAdmService_ActualizarPais_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdmService" type="tns:IAdmService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PostPais">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostPais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMunicipio">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostMunicipio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PosProvencia">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PosProvencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostZona">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostZona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostDireccion">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostDireccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostPersona">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostRole">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostUser">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostUserRole">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostAdministrador">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostAdministrador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewAdm">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetViewAdm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvencias">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetProvencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaises">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetPaises" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdm">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetAdm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonas">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetPersonas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersRoles">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetUsersRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZonas">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetZonas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMunicipios">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetMunicipios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDirecciones">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetDirecciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetirarPais">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/RetirarPais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPais">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/ActualizarPais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdmService">
+    <wsdl:port name="BasicHttpBinding_IAdmService" binding="tns:BasicHttpBinding_IAdmService">
+      <soap:address location="http://localhost:49590/AdmService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
