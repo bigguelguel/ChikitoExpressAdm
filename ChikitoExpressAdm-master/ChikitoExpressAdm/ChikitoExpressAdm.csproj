@@ -66,6 +66,12 @@
     <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="LugaresForms\GestionMunicipios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LugaresForms\GestionMunicipios.Designer.cs">
+      <DependentUpon>GestionMunicipios.cs</DependentUpon>
+    </Compile>
     <Compile Include="LugaresForms\GestionPaises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     <Compile Include="LugaresForms\GestionProvencias.Designer.cs">
       <DependentUpon>GestionProvencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="LugaresForms\GestionZonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LugaresForms\GestionZonas.Designer.cs">
+      <DependentUpon>GestionZonas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReference\Reference.cs">
@@ -88,11 +100,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LugaresForms\GestionMunicipios.resx">
+      <DependentUpon>GestionMunicipios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LugaresForms\GestionPaises.resx">
       <DependentUpon>GestionPaises.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LugaresForms\GestionProvencias.resx">
       <DependentUpon>GestionProvencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LugaresForms\GestionZonas.resx">
+      <DependentUpon>GestionZonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

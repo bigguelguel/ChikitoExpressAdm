@@ -31,5 +31,11 @@ namespace ChikitoExpressAdm
             GestionProvencias provencia = new GestionProvencias();
             provencia.Show();
         }
+
+        private void municipioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionMunicipios municipio = new GestionMunicipios();
+            municipio.Show();
+        }
     }
 }

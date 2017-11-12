@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtbAgregarProvencia = new System.Windows.Forms.TextBox();
-            this.bttAgregarProvencia = new System.Windows.Forms.Button();
+            this.bttAgregarProvencias = new System.Windows.Forms.Button();
             this.comboBoxPais = new System.Windows.Forms.ComboBox();
             this.Label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -65,16 +65,16 @@
             this.txtbAgregarProvencia.Size = new System.Drawing.Size(236, 20);
             this.txtbAgregarProvencia.TabIndex = 3;
             // 
-            // bttAgregarProvencia
+            // bttAgregarProvencias
             // 
-            this.bttAgregarProvencia.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttAgregarProvencia.Location = new System.Drawing.Point(179, 142);
-            this.bttAgregarProvencia.Name = "bttAgregarProvencia";
-            this.bttAgregarProvencia.Size = new System.Drawing.Size(88, 35);
-            this.bttAgregarProvencia.TabIndex = 4;
-            this.bttAgregarProvencia.Text = "Agregar";
-            this.bttAgregarProvencia.UseVisualStyleBackColor = true;
-            this.bttAgregarProvencia.Click += new System.EventHandler(this.bttAgregarProvencia_Click);
+            this.bttAgregarProvencias.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAgregarProvencias.Location = new System.Drawing.Point(179, 142);
+            this.bttAgregarProvencias.Name = "bttAgregarProvencias";
+            this.bttAgregarProvencias.Size = new System.Drawing.Size(88, 35);
+            this.bttAgregarProvencias.TabIndex = 4;
+            this.bttAgregarProvencias.Text = "Agregar";
+            this.bttAgregarProvencias.UseVisualStyleBackColor = true;
+            this.bttAgregarProvencias.Click += new System.EventHandler(this.bttAgregarProvencia_Click);
             // 
             // comboBoxPais
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.comboBoxPais);
-            this.Controls.Add(this.bttAgregarProvencia);
+            this.Controls.Add(this.bttAgregarProvencias);
             this.Controls.Add(this.txtbAgregarProvencia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -126,7 +126,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbAgregarProvencia;
-        private System.Windows.Forms.Button bttAgregarProvencia;
+        private System.Windows.Forms.Button bttAgregarProvencias;
         private System.Windows.Forms.ComboBox comboBoxPais;
         private System.Windows.Forms.Label Label3;
         private System.Windows.Forms.DataGridView dataGridView1;
