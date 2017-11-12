@@ -14,8 +14,8 @@ namespace ChikitoExpressAdm.LugaresForms
     public partial class GestionPaises : Form
     {
         AdmServiceClient client;
-        public int row { get; set; }
-        private int idpais { get; set; }
+        public int Row { get; set; }
+        private int IdPais { get; set; }
         public GestionPaises()
         {
             InitializeComponent();
@@ -48,11 +48,11 @@ namespace ChikitoExpressAdm.LugaresForms
 
         private void dataGridViewPais_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            row = dataGridViewPais.CurrentRow.Index;
+            Row = dataGridViewPais.CurrentRow.Index;
             var paises = client.GetPaises();
-            txbActualizarNombre.Text = paises.ElementAt(row).nombre;
-            chkEstado.Checked = paises.ElementAt(row).estado;
-            idpais = paises.ElementAt(row).idpais;
+            txbActualizarNombre.Text = paises.ElementAt(Row).nombre;
+            chkEstado.Checked = paises.ElementAt(Row).estado;
+            IdPais = paises.ElementAt(Row).idpais;
             chkEstado.Enabled = true;
             txbActualizarNombre.Enabled = true;
         }
@@ -64,7 +64,7 @@ namespace ChikitoExpressAdm.LugaresForms
 
         private void bttRetirar_Click(object sender, EventArgs e)
         {
-            client.RetirarPais(idpais);
+            client.RetirarPais(IdPais);
             dataGridUpdate();
 
         }
@@ -72,7 +72,7 @@ namespace ChikitoExpressAdm.LugaresForms
         private void bttActualizar_Click(object sender, EventArgs e)
         {
             var paises = client.GetPaises();
-            client.ActualizarPais(idpais, txbActualizarNombre.Text, chkEstado.Checked);
+            client.ActualizarPais(IdPais, txbActualizarNombre.Text, chkEstado.Checked);
             dataGridUpdate();
         }
     }

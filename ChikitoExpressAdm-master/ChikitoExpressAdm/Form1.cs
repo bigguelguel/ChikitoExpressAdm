@@ -14,11 +14,10 @@ namespace ChikitoExpressAdm
 {
     public partial class Form1 : Form
     {
-        private GestionPaises formPais;
+        private GestionPaises formPais { get; set; }
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void paisToolStripMenuItem_Click(object sender, EventArgs e)
