@@ -54,6 +54,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion Clientes\ActualizarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Clientes\ActualizarClientes.Designer.cs">
+      <DependentUpon>ActualizarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Clientes\CrearClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
+      <DependentUpon>CrearClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="LugaresForms\GestionPaises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,9 +180,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gestion Clientes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
