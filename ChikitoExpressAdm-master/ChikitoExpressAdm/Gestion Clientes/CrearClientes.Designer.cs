@@ -59,7 +59,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -219,7 +218,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(462, 184);
+            this.label10.Location = new System.Drawing.Point(472, 229);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(11, 13);
             this.label10.TabIndex = 16;
@@ -342,15 +341,6 @@
             this.label18.Size = new System.Drawing.Size(11, 13);
             this.label18.TabIndex = 30;
             this.label18.Text = "*";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(854, 229);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(11, 13);
-            this.label20.TabIndex = 33;
-            this.label20.Text = "*";
             // 
             // label21
             // 
@@ -575,7 +565,6 @@
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label17);
@@ -648,7 +637,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox14;
