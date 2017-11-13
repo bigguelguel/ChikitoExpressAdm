@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChikitoExpressAdm.Gestion_Clientes
+namespace ChikitoExpressAdm.Gestion_ADM
 {
-    public partial class CrearClientes : Form
+    public partial class CrearADM : Form
     {
-        public CrearClientes()
+        public CrearADM()
         {
             InitializeComponent();
         }
 
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void CrearADM_Load(object sender, EventArgs e)
         {
 
         }

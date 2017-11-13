@@ -54,6 +54,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion ADM\ActualizarADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion ADM\ActualizarADM.Designer.cs">
+      <DependentUpon>ActualizarADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion ADM\CrearADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion ADM\CrearADM.Designer.cs">
+      <DependentUpon>CrearADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion Clientes\ActualizarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,18 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion ADM\ActualizarADM.resx">
+      <DependentUpon>ActualizarADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion ADM\CrearADM.resx">
+      <DependentUpon>CrearADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Clientes\ActualizarClientes.resx">
+      <DependentUpon>ActualizarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
+      <DependentUpon>CrearClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LugaresForms\GestionMunicipios.resx">
       <DependentUpon>GestionMunicipios.cs</DependentUpon>
