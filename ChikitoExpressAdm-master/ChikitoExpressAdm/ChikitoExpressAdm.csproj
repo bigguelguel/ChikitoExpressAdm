@@ -112,6 +112,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion ADM\ActualizarADM.resx">
+      <DependentUpon>ActualizarADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion ADM\CrearADM.resx">
       <DependentUpon>CrearADM.cs</DependentUpon>
     </EmbeddedResource>
