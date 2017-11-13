@@ -37,11 +37,9 @@
             this.gestionClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.retirarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionAdmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionRestoranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bebidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,8 +111,7 @@
             // 
             this.gestionClientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearClienteToolStripMenuItem,
-            this.actualizarToolStripMenuItem,
-            this.retirarToolStripMenuItem});
+            this.actualizarToolStripMenuItem});
             this.gestionClientesToolStripMenuItem.Name = "gestionClientesToolStripMenuItem";
             this.gestionClientesToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.gestionClientesToolStripMenuItem.Text = "Gestion Clientes";
@@ -122,27 +119,20 @@
             // crearClienteToolStripMenuItem
             // 
             this.crearClienteToolStripMenuItem.Name = "crearClienteToolStripMenuItem";
-            this.crearClienteToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.crearClienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.crearClienteToolStripMenuItem.Text = "Crear Cliente";
             // 
             // actualizarToolStripMenuItem
             // 
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // retirarToolStripMenuItem
-            // 
-            this.retirarToolStripMenuItem.Name = "retirarToolStripMenuItem";
-            this.retirarToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.retirarToolStripMenuItem.Text = "Retirar";
             // 
             // gestionAdmToolStripMenuItem
             // 
             this.gestionAdmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearToolStripMenuItem,
-            this.actualizarToolStripMenuItem1,
-            this.eliminarToolStripMenuItem});
+            this.actualizarToolStripMenuItem1});
             this.gestionAdmToolStripMenuItem.Name = "gestionAdmToolStripMenuItem";
             this.gestionAdmToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.gestionAdmToolStripMenuItem.Text = "Gestion Adm";
@@ -158,12 +148,6 @@
             this.actualizarToolStripMenuItem1.Name = "actualizarToolStripMenuItem1";
             this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.actualizarToolStripMenuItem1.Text = "Actualizar";
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // gestionRestoranteToolStripMenuItem
             // 
@@ -270,11 +254,9 @@
         private System.Windows.Forms.ToolStripMenuItem gestionClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem retirarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionAdmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionRestoranteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionMenuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bebidasToolStripMenuItem;
