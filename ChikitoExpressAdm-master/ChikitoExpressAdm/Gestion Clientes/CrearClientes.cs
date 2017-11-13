@@ -16,5 +16,10 @@ namespace ChikitoExpressAdm.Gestion_Clientes
         {
             InitializeComponent();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
