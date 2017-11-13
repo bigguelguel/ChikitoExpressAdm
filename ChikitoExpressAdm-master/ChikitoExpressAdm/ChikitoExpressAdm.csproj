@@ -100,6 +100,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Clientes\ActualizarClientes.resx">
+      <DependentUpon>ActualizarClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </EmbeddedResource>
