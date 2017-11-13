@@ -94,6 +94,7 @@
             this.button1.TabIndex = 114;
             this.button1.Text = "Agregar Administrador";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -549,7 +550,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 782);
+            this.ClientSize = new System.Drawing.Size(867, 749);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.label30);
