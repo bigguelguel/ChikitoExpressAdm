@@ -78,6 +78,18 @@
     <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion Restaurante\GestionarBebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Restaurante\GestionarBebidas.Designer.cs">
+      <DependentUpon>GestionarBebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Restaurante\GestionarPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Restaurante\GestionarPlatos.Designer.cs">
+      <DependentUpon>GestionarPlatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="LugaresForms\GestionMunicipios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
       <DependentUpon>CrearClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Restaurante\GestionarBebidas.resx">
+      <DependentUpon>GestionarBebidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Restaurante\GestionarPlatos.resx">
+      <DependentUpon>GestionarPlatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LugaresForms\GestionMunicipios.resx">
       <DependentUpon>GestionMunicipios.cs</DependentUpon>
