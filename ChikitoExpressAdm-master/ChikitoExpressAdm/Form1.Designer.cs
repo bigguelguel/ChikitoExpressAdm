@@ -37,7 +37,6 @@
             this.gestionClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.retirarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionAdmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,8 +110,7 @@
             // 
             this.gestionClientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearClienteToolStripMenuItem,
-            this.actualizarToolStripMenuItem,
-            this.retirarToolStripMenuItem});
+            this.actualizarToolStripMenuItem});
             this.gestionClientesToolStripMenuItem.Name = "gestionClientesToolStripMenuItem";
             this.gestionClientesToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.gestionClientesToolStripMenuItem.Text = "Gestion Clientes";
@@ -128,12 +126,6 @@
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // retirarToolStripMenuItem
-            // 
-            this.retirarToolStripMenuItem.Name = "retirarToolStripMenuItem";
-            this.retirarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.retirarToolStripMenuItem.Text = "Eliminar";
             // 
             // gestionAdmToolStripMenuItem
             // 
@@ -261,7 +253,6 @@
         private System.Windows.Forms.ToolStripMenuItem gestionClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem retirarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionAdmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem1;
