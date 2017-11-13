@@ -100,6 +100,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
+      <DependentUpon>CrearClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LugaresForms\GestionMunicipios.resx">
       <DependentUpon>GestionMunicipios.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,7 +201,9 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Gestion ADM\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
