@@ -499,7 +499,7 @@
             this.textBox13.Location = new System.Drawing.Point(582, 262);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(219, 80);
+            this.textBox13.Size = new System.Drawing.Size(219, 90);
             this.textBox13.TabIndex = 118;
             // 
             // label25
