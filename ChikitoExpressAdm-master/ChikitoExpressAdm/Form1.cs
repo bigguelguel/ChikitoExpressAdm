@@ -37,5 +37,11 @@ namespace ChikitoExpressAdm
             GestionMunicipios municipio = new GestionMunicipios();
             municipio.Show();
         }
+
+        private void zonaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionZonas vistaZona = new GestionZonas();
+            vistaZona.Show();
+        }
     }
 }

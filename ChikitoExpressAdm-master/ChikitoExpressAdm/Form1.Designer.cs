@@ -107,6 +107,7 @@
             this.zonaToolStripMenuItem.Name = "zonaToolStripMenuItem";
             this.zonaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zonaToolStripMenuItem.Text = "Zona";
+            this.zonaToolStripMenuItem.Click += new System.EventHandler(this.zonaToolStripMenuItem_Click);
             // 
             // gestionClientesToolStripMenuItem
             // 
