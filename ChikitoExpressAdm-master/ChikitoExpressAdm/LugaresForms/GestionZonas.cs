@@ -30,10 +30,10 @@ namespace ChikitoExpressAdm.LugaresForms
             InitializeComponent();
             client = new AdmServiceClient();
             UpDateCombobox();
-            updateDataGridView();
+            UpdateDataGridView();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
         }
@@ -47,7 +47,7 @@ namespace ChikitoExpressAdm.LugaresForms
             }
             comboBoxMunicipio.DataSource = stringMunicipios;
         }
-        public void updateDataGridView()
+        public void UpdateDataGridView()
         {
             var zonas = client.GetZonas();
             var paises = client.GetPaises();

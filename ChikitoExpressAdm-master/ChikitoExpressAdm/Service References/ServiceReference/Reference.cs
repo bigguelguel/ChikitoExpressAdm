@@ -4861,6 +4861,18 @@ namespace ChikitoExpressAdm.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostPais", ReplyAction="http://tempuri.org/IAdmService/PostPaisResponse")]
         System.Threading.Tasks.Task PostPaisAsync(ChikitoExpressAdm.ServiceReference.Pais pais);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetCliente", ReplyAction="http://tempuri.org/IAdmService/GetClienteResponse")]
+        ChikitoExpressAdm.ServiceReference.Cliente[] GetCliente();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetCliente", ReplyAction="http://tempuri.org/IAdmService/GetClienteResponse")]
+        System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.Cliente[]> GetClienteAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostClient", ReplyAction="http://tempuri.org/IAdmService/PostClientResponse")]
+        void PostClient(ChikitoExpressAdm.ServiceReference.Cliente client);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostClient", ReplyAction="http://tempuri.org/IAdmService/PostClientResponse")]
+        System.Threading.Tasks.Task PostClientAsync(ChikitoExpressAdm.ServiceReference.Cliente client);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostMunicipio", ReplyAction="http://tempuri.org/IAdmService/PostMunicipioResponse")]
         void PostMunicipio(ChikitoExpressAdm.ServiceReference.Municipio municipio);
         
@@ -4992,6 +5004,12 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarPais", ReplyAction="http://tempuri.org/IAdmService/ActualizarPaisResponse")]
         System.Threading.Tasks.Task ActualizarPaisAsync(int idPais, string Nombre, bool e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarCliente", ReplyAction="http://tempuri.org/IAdmService/ActualizarClienteResponse")]
+        void ActualizarCliente(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarCliente", ReplyAction="http://tempuri.org/IAdmService/ActualizarClienteResponse")]
+        System.Threading.Tasks.Task ActualizarClienteAsync(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -5027,6 +5045,22 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         public System.Threading.Tasks.Task PostPaisAsync(ChikitoExpressAdm.ServiceReference.Pais pais) {
             return base.Channel.PostPaisAsync(pais);
+        }
+        
+        public ChikitoExpressAdm.ServiceReference.Cliente[] GetCliente() {
+            return base.Channel.GetCliente();
+        }
+        
+        public System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.Cliente[]> GetClienteAsync() {
+            return base.Channel.GetClienteAsync();
+        }
+        
+        public void PostClient(ChikitoExpressAdm.ServiceReference.Cliente client) {
+            base.Channel.PostClient(client);
+        }
+        
+        public System.Threading.Tasks.Task PostClientAsync(ChikitoExpressAdm.ServiceReference.Cliente client) {
+            return base.Channel.PostClientAsync(client);
         }
         
         public void PostMunicipio(ChikitoExpressAdm.ServiceReference.Municipio municipio) {
@@ -5203,6 +5237,14 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         public System.Threading.Tasks.Task ActualizarPaisAsync(int idPais, string Nombre, bool e) {
             return base.Channel.ActualizarPaisAsync(idPais, Nombre, e);
+        }
+        
+        public void ActualizarCliente(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser) {
+            base.Channel.ActualizarCliente(cliente, iduser);
+        }
+        
+        public System.Threading.Tasks.Task ActualizarClienteAsync(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser) {
+            return base.Channel.ActualizarClienteAsync(cliente, iduser);
         }
     }
 }

@@ -185,6 +185,9 @@
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Administradore.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Direccione.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
