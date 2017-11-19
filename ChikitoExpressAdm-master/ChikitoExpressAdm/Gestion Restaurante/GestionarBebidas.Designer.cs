@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxProvencia = new System.Windows.Forms.ComboBox();
+            this.comboBoxBebida = new System.Windows.Forms.ComboBox();
             this.txtbMunicipio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxProvencia
+            // comboBoxBebida
             // 
-            this.comboBoxProvencia.FormattingEnabled = true;
-            this.comboBoxProvencia.Location = new System.Drawing.Point(280, 92);
-            this.comboBoxProvencia.Name = "comboBoxProvencia";
-            this.comboBoxProvencia.Size = new System.Drawing.Size(183, 21);
-            this.comboBoxProvencia.TabIndex = 12;
+            this.comboBoxBebida.FormattingEnabled = true;
+            this.comboBoxBebida.Location = new System.Drawing.Point(280, 92);
+            this.comboBoxBebida.Name = "comboBoxBebida";
+            this.comboBoxBebida.Size = new System.Drawing.Size(183, 21);
+            this.comboBoxBebida.TabIndex = 12;
             // 
             // txtbMunicipio
             // 
@@ -191,7 +191,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxProvencia);
+            this.Controls.Add(this.comboBoxBebida);
             this.Controls.Add(this.txtbMunicipio);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -206,7 +206,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxProvencia;
+        private System.Windows.Forms.ComboBox comboBoxBebida;
         private System.Windows.Forms.TextBox txtbMunicipio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

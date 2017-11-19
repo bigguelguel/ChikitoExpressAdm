@@ -48,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes Interfaces\Actualizar Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Actualizar Orden.Designer.cs">
+      <DependentUpon>Actualizar Orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Eliminar Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Eliminar Orden.Designer.cs">
+      <DependentUpon>Eliminar Orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Realizar Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Realizar Orden.Designer.cs">
+      <DependentUpon>Realizar Orden.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +95,12 @@
     </Compile>
     <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
       <DependentUpon>CrearClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion Ordenes\Gestion OrdenesADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Ordenes\Gestion OrdenesADM.Designer.cs">
+      <DependentUpon>Gestion OrdenesADM.cs</DependentUpon>
     </Compile>
     <Compile Include="Gestion Restaurante\GestionarBebidas.cs">
       <SubType>Form</SubType>
@@ -121,6 +145,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Clientes Interfaces\Actualizar Orden.resx">
+      <DependentUpon>Actualizar Orden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes Interfaces\Eliminar Orden.resx">
+      <DependentUpon>Eliminar Orden.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
       <DependentUpon>CrearClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Ordenes\Gestion OrdenesADM.resx">
+      <DependentUpon>Gestion OrdenesADM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Restaurante\GestionarBebidas.resx">
       <DependentUpon>GestionarBebidas.cs</DependentUpon>
