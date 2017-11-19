@@ -96,6 +96,12 @@
     <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gestion Ordenes\Crear Orden Empleado ADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion Ordenes\Crear Orden Empleado ADM.Designer.cs">
+      <DependentUpon>Crear Orden Empleado ADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion Ordenes\Gestion OrdenesADM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
       <DependentUpon>CrearClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion Ordenes\Crear Orden Empleado ADM.resx">
+      <DependentUpon>Crear Orden Empleado ADM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Ordenes\Gestion OrdenesADM.resx">
       <DependentUpon>Gestion OrdenesADM.cs</DependentUpon>

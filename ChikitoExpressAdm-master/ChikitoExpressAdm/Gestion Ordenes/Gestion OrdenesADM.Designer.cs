@@ -55,6 +55,8 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -296,11 +298,31 @@
             this.label13.TabIndex = 34;
             this.label13.Text = "__Seleccione Orden a Gestionar__";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(690, 695);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(68, 23);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Actualizar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(690, 747);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(68, 23);
+            this.button5.TabIndex = 36;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Gestion_OrdenesADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 782);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBox6);
@@ -366,5 +388,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
