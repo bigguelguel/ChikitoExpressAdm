@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes Interfaces\Modificar Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes Interfaces\Modificar Orden.Designer.cs">
+      <DependentUpon>Modificar Orden.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes Interfaces\Realizar Orden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Clientes Interfaces\Modificar Orden.resx">
+      <DependentUpon>Modificar Orden.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes Interfaces\Realizar Orden.resx">
       <DependentUpon>Realizar Orden.cs</DependentUpon>
     </EmbeddedResource>
