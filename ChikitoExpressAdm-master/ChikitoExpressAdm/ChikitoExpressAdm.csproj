@@ -185,6 +185,9 @@
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Administradore.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Bebida.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Cliente.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -200,10 +203,19 @@
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Persona.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Plato.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Provencia.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Role.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.TiposBebida.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.TiposPlato.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.User.datasource">

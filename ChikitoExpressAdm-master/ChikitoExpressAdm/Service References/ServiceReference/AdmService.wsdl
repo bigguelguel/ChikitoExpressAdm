@@ -7,6 +7,54 @@
       <xsd:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IAdmService_GetTipoPlatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoPlatos" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetTipoPlatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoPlatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostTipoPlatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTipoPlatos" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostTipoPlatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTipoPlatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetTipoBebidas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoBebidas" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetTipoBebidas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoBebidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostTipoBebidas_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTipoBebidas" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostTipoBebidas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTipoBebidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPlato_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlato" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetPlato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostPlatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostPlatos" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostPlatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostPlatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetBebida_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBebida" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetBebida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBebidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostBebida_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostBebida" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostBebida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostBebidaResponse" />
+  </wsdl:message>
   <wsdl:message name="IAdmService_PostPais_InputMessage">
     <wsdl:part name="parameters" element="tns:PostPais" />
   </wsdl:message>
@@ -164,6 +212,38 @@
     <wsdl:part name="parameters" element="tns:ActualizarClienteResponse" />
   </wsdl:message>
   <wsdl:portType name="IAdmService">
+    <wsdl:operation name="GetTipoPlatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetTipoPlatos" message="tns:IAdmService_GetTipoPlatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetTipoPlatosResponse" message="tns:IAdmService_GetTipoPlatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTipoPlatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostTipoPlatos" message="tns:IAdmService_PostTipoPlatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostTipoPlatosResponse" message="tns:IAdmService_PostTipoPlatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoBebidas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetTipoBebidas" message="tns:IAdmService_GetTipoBebidas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetTipoBebidasResponse" message="tns:IAdmService_GetTipoBebidas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTipoBebidas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostTipoBebidas" message="tns:IAdmService_PostTipoBebidas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostTipoBebidasResponse" message="tns:IAdmService_PostTipoBebidas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetPlato" message="tns:IAdmService_GetPlato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetPlatoResponse" message="tns:IAdmService_GetPlato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostPlatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostPlatos" message="tns:IAdmService_PostPlatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostPlatosResponse" message="tns:IAdmService_PostPlatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBebida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetBebida" message="tns:IAdmService_GetBebida_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetBebidaResponse" message="tns:IAdmService_GetBebida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostBebida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostBebida" message="tns:IAdmService_PostBebida_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostBebidaResponse" message="tns:IAdmService_PostBebida_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="PostPais">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostPais" message="tns:IAdmService_PostPais_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostPaisResponse" message="tns:IAdmService_PostPais_OutputMessage" />
@@ -271,6 +351,78 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAdmService" type="tns:IAdmService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTipoPlatos">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetTipoPlatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostTipoPlatos">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostTipoPlatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoBebidas">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetTipoBebidas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostTipoBebidas">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostTipoBebidas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlato">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetPlato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostPlatos">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostPlatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBebida">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetBebida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostBebida">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostBebida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="PostPais">
       <soap:operation soapAction="http://tempuri.org/IAdmService/PostPais" style="document" />
       <wsdl:input>

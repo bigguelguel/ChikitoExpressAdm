@@ -1,10 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService" />
+  <xs:element name="GetTipoPlatos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPlatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetTipoPlatosResult" nillable="true" type="q1:ArrayOfTiposPlato" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostTipoPlatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="tipoPlato" nillable="true" type="q2:TiposPlato" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostTipoPlatosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoBebidas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoBebidasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetTipoBebidasResult" nillable="true" type="q3:ArrayOfTiposBebida" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostTipoBebidas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="tipoBebida" nillable="true" type="q4:TiposBebida" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostTipoBebidasResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlato">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlatoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetPlatoResult" nillable="true" type="q5:ArrayOfPlato" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostPlatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="plato" nillable="true" type="q6:Plato" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostPlatosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBebida">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBebidaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetBebidaResult" nillable="true" type="q7:ArrayOfBebida" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostBebida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="bebida" nillable="true" type="q8:Bebida" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostBebidaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
   <xs:element name="PostPais">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="pais" nillable="true" type="q1:Pais" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="pais" nillable="true" type="q9:Pais" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -21,14 +117,14 @@
   <xs:element name="GetClienteResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetClienteResult" nillable="true" type="q2:ArrayOfCliente" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetClienteResult" nillable="true" type="q10:ArrayOfCliente" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="PostClient">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="client" nillable="true" type="q3:Cliente" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="client" nillable="true" type="q11:Cliente" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -40,7 +136,7 @@
   <xs:element name="PostMunicipio">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="municipio" nillable="true" type="q4:Municipio" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="municipio" nillable="true" type="q12:Municipio" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -52,7 +148,7 @@
   <xs:element name="PosProvencia">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="provencia" nillable="true" type="q5:Provencia" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="provencia" nillable="true" type="q13:Provencia" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -64,7 +160,7 @@
   <xs:element name="PostZona">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="zona" nillable="true" type="q6:Zona" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="zona" nillable="true" type="q14:Zona" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -76,7 +172,7 @@
   <xs:element name="PostDireccion">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="direccion" nillable="true" type="q7:Direccione" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="direccion" nillable="true" type="q15:Direccione" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -88,7 +184,7 @@
   <xs:element name="PostPersona">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="persona" nillable="true" type="q8:Persona" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="persona" nillable="true" type="q16:Persona" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -100,7 +196,7 @@
   <xs:element name="PostRole">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="rol" nillable="true" type="q9:Role" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="rol" nillable="true" type="q17:Role" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -112,7 +208,7 @@
   <xs:element name="PostUser">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="user" nillable="true" type="q10:User" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="user" nillable="true" type="q18:User" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -124,7 +220,7 @@
   <xs:element name="PostUserRole">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="userRol" nillable="true" type="q11:UsersRole" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="userRol" nillable="true" type="q19:UsersRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -136,7 +232,7 @@
   <xs:element name="PostAdministrador">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="adm" nillable="true" type="q12:Administradore" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="adm" nillable="true" type="q20:Administradore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -155,7 +251,7 @@
   <xs:element name="GetViewAdmResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetViewAdmResult" nillable="true" type="q13:ViewAdministradore" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetViewAdmResult" nillable="true" type="q21:ViewAdministradore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -167,7 +263,7 @@
   <xs:element name="GetProvenciasResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetProvenciasResult" nillable="true" type="q14:ArrayOfProvencia" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetProvenciasResult" nillable="true" type="q22:ArrayOfProvencia" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -179,7 +275,7 @@
   <xs:element name="GetPaisesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetPaisesResult" nillable="true" type="q15:ArrayOfPais" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetPaisesResult" nillable="true" type="q23:ArrayOfPais" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -191,7 +287,7 @@
   <xs:element name="GetAdmResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetAdmResult" nillable="true" type="q16:ArrayOfAdministradore" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetAdmResult" nillable="true" type="q24:ArrayOfAdministradore" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -203,7 +299,7 @@
   <xs:element name="GetPersonasResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetPersonasResult" nillable="true" type="q17:ArrayOfPersona" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetPersonasResult" nillable="true" type="q25:ArrayOfPersona" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -215,7 +311,7 @@
   <xs:element name="GetUsersResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetUsersResult" nillable="true" type="q18:ArrayOfUser" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetUsersResult" nillable="true" type="q26:ArrayOfUser" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -227,7 +323,7 @@
   <xs:element name="GetUsersRolesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetUsersRolesResult" nillable="true" type="q19:ArrayOfUsersRole" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetUsersRolesResult" nillable="true" type="q27:ArrayOfUsersRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -239,7 +335,7 @@
   <xs:element name="GetRolesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetRolesResult" nillable="true" type="q20:ArrayOfRole" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetRolesResult" nillable="true" type="q28:ArrayOfRole" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -251,7 +347,7 @@
   <xs:element name="GetZonasResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetZonasResult" nillable="true" type="q21:ArrayOfZona" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetZonasResult" nillable="true" type="q29:ArrayOfZona" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -263,7 +359,7 @@
   <xs:element name="GetMunicipiosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetMunicipiosResult" nillable="true" type="q22:ArrayOfMunicipio" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetMunicipiosResult" nillable="true" type="q30:ArrayOfMunicipio" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -275,7 +371,7 @@
   <xs:element name="GetDireccionesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetDireccionesResult" nillable="true" type="q23:ArrayOfDireccione" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="GetDireccionesResult" nillable="true" type="q31:ArrayOfDireccione" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -308,7 +404,7 @@
   <xs:element name="ActualizarCliente">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="cliente" nillable="true" type="q24:Cliente" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/ChikitoExpressService" minOccurs="0" name="cliente" nillable="true" type="q32:Cliente" />
         <xs:element minOccurs="0" name="iduser" type="xs:int" />
       </xs:sequence>
     </xs:complexType>

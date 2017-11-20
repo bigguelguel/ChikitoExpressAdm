@@ -16,5 +16,10 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
         {
             InitializeComponent();
         }
+
+        private void bttActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

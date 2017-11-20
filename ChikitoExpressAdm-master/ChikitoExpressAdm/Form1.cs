@@ -19,7 +19,7 @@ namespace ChikitoExpressAdm
     {
         private GestionPaises FormPais { get; set; }
         private CrearClientes FormCliente { get; set; }
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -85,4 +85,6 @@ namespace ChikitoExpressAdm
             vistaPlato.Show();
         }
     }
+
+        
 }
