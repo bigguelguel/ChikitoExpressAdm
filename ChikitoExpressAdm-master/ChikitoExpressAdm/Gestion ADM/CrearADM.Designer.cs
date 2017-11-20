@@ -34,7 +34,7 @@
             this.comboBoxZona = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBoxCasao = new System.Windows.Forms.TextBox();
+            this.textBoxCasa = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.textBoxApartamento = new System.Windows.Forms.TextBox();
             this.textBoxEdificio = new System.Windows.Forms.TextBox();
@@ -63,11 +63,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4PrimerNombre = new System.Windows.Forms.TextBox();
+            this.textBoxPrimerNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBoxDocumento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
@@ -81,6 +79,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.listBoxRoles = new System.Windows.Forms.ListBox();
             this.buttonAsignarRoles = new System.Windows.Forms.Button();
+            this.buttonNuevoAdm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +91,7 @@
             this.buttonAdministrador.TabIndex = 114;
             this.buttonAdministrador.Text = "Agregar Administrador";
             this.buttonAdministrador.UseVisualStyleBackColor = true;
+            this.buttonAdministrador.Click += new System.EventHandler(this.buttonAdministrador_Click);
             // 
             // dataGridView1
             // 
@@ -136,12 +136,12 @@
             this.label29.TabIndex = 109;
             this.label29.Text = "*";
             // 
-            // textBoxCasao
+            // textBoxCasa
             // 
-            this.textBoxCasao.Location = new System.Drawing.Point(559, 394);
-            this.textBoxCasao.Name = "textBoxCasao";
-            this.textBoxCasao.Size = new System.Drawing.Size(207, 20);
-            this.textBoxCasao.TabIndex = 108;
+            this.textBoxCasa.Location = new System.Drawing.Point(559, 394);
+            this.textBoxCasa.Name = "textBoxCasa";
+            this.textBoxCasa.Size = new System.Drawing.Size(207, 20);
+            this.textBoxCasa.TabIndex = 108;
             // 
             // label27
             // 
@@ -377,12 +377,12 @@
             this.label6.TabIndex = 78;
             this.label6.Text = "*";
             // 
-            // textBox4PrimerNombre
+            // textBoxPrimerNombre
             // 
-            this.textBox4PrimerNombre.Location = new System.Drawing.Point(204, 139);
-            this.textBox4PrimerNombre.Name = "textBox4PrimerNombre";
-            this.textBox4PrimerNombre.Size = new System.Drawing.Size(207, 20);
-            this.textBox4PrimerNombre.TabIndex = 77;
+            this.textBoxPrimerNombre.Location = new System.Drawing.Point(204, 139);
+            this.textBoxPrimerNombre.Name = "textBoxPrimerNombre";
+            this.textBoxPrimerNombre.Size = new System.Drawing.Size(207, 20);
+            this.textBoxPrimerNombre.TabIndex = 77;
             // 
             // label5
             // 
@@ -401,22 +401,6 @@
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 75;
             this.label4.Text = "Primer Nombre: ";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(204, 22);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(92, 20);
-            this.textBox3.TabIndex = 74;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 73;
-            this.label3.Text = "ID Administrador: ";
             // 
             // textBoxDocumento
             // 
@@ -528,11 +512,22 @@
             this.buttonAsignarRoles.UseVisualStyleBackColor = true;
             this.buttonAsignarRoles.Click += new System.EventHandler(this.buttonAsignarRoles_Click);
             // 
+            // buttonNuevoAdm
+            // 
+            this.buttonNuevoAdm.Location = new System.Drawing.Point(204, 20);
+            this.buttonNuevoAdm.Name = "buttonNuevoAdm";
+            this.buttonNuevoAdm.Size = new System.Drawing.Size(91, 22);
+            this.buttonNuevoAdm.TabIndex = 126;
+            this.buttonNuevoAdm.Text = "Nuevo Adm";
+            this.buttonNuevoAdm.UseVisualStyleBackColor = true;
+            this.buttonNuevoAdm.Click += new System.EventHandler(this.buttonNuevoAdm_Click);
+            // 
             // CrearADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 718);
+            this.Controls.Add(this.buttonNuevoAdm);
             this.Controls.Add(this.buttonAsignarRoles);
             this.Controls.Add(this.listBoxRoles);
             this.Controls.Add(this.label31);
@@ -548,7 +543,7 @@
             this.Controls.Add(this.comboBoxZona);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
-            this.Controls.Add(this.textBoxCasao);
+            this.Controls.Add(this.textBoxCasa);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.textBoxApartamento);
             this.Controls.Add(this.textBoxEdificio);
@@ -577,11 +572,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4PrimerNombre);
+            this.Controls.Add(this.textBoxPrimerNombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxDocumento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxUsuario);
@@ -602,7 +595,7 @@
         private System.Windows.Forms.ComboBox comboBoxZona;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBoxCasao;
+        private System.Windows.Forms.TextBox textBoxCasa;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox textBoxApartamento;
         private System.Windows.Forms.TextBox textBoxEdificio;
@@ -631,11 +624,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4PrimerNombre;
+        private System.Windows.Forms.TextBox textBoxPrimerNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxDocumento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxUsuario;
@@ -649,5 +640,6 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.ListBox listBoxRoles;
         private System.Windows.Forms.Button buttonAsignarRoles;
+        private System.Windows.Forms.Button buttonNuevoAdm;
     }
 }
