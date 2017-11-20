@@ -352,6 +352,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Gestion_OrdenesADM";
             this.Text = "Gestion_OrdenesADM";
+            this.Load += new System.EventHandler(this.Gestion_OrdenesADM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);

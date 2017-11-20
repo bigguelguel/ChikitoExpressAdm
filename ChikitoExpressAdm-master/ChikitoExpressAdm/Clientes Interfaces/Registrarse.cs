@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChikitoExpressAdm.Clientes_Interfaces
 {
-    public partial class Actualizar_Orden : Form
+    public partial class Registrarse : Form
     {
-        public Actualizar_Orden()
+        public Registrarse()
         {
             InitializeComponent();
         }

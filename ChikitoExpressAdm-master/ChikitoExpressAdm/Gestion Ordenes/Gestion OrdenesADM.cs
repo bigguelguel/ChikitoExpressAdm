@@ -21,5 +21,10 @@ namespace ChikitoExpressAdm.Gestion_Ordenes
         {
 
         }
+
+        private void Gestion_OrdenesADM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
