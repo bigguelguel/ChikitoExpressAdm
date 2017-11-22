@@ -38,11 +38,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewBebida = new System.Windows.Forms.DataGridView();
             this.buttonAgregar = new System.Windows.Forms.Button();
             this.buttonActualizar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBoxBebida = new System.Windows.Forms.PictureBox();
+            this.buttonImagen = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBebida)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBebida)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxTipoBebida
@@ -136,13 +139,13 @@
             this.radioButton1.Text = "Estado";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewBebida
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 269);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 212);
-            this.dataGridView1.TabIndex = 18;
+            this.dataGridViewBebida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBebida.Location = new System.Drawing.Point(12, 344);
+            this.dataGridViewBebida.Name = "dataGridViewBebida";
+            this.dataGridViewBebida.Size = new System.Drawing.Size(523, 137);
+            this.dataGridViewBebida.TabIndex = 18;
             // 
             // buttonAgregar
             // 
@@ -178,15 +181,38 @@
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // pictureBoxBebida
+            // 
+            this.pictureBoxBebida.Location = new System.Drawing.Point(280, 259);
+            this.pictureBoxBebida.Name = "pictureBoxBebida";
+            this.pictureBoxBebida.Size = new System.Drawing.Size(189, 79);
+            this.pictureBoxBebida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBebida.TabIndex = 22;
+            this.pictureBoxBebida.TabStop = false;
+            // 
+            // buttonImagen
+            // 
+            this.buttonImagen.AccessibleDescription = "";
+            this.buttonImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonImagen.Location = new System.Drawing.Point(79, 285);
+            this.buttonImagen.Name = "buttonImagen";
+            this.buttonImagen.Size = new System.Drawing.Size(111, 27);
+            this.buttonImagen.TabIndex = 23;
+            this.buttonImagen.Text = "Imagen";
+            this.buttonImagen.UseVisualStyleBackColor = true;
+            this.buttonImagen.Click += new System.EventHandler(this.buttonImagen_Click);
+            // 
             // GestionarBebidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 518);
+            this.Controls.Add(this.buttonImagen);
+            this.Controls.Add(this.pictureBoxBebida);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonActualizar);
             this.Controls.Add(this.buttonAgregar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewBebida);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.label5);
@@ -199,7 +225,8 @@
             this.Controls.Add(this.label1);
             this.Name = "GestionarBebidas";
             this.Text = "Gestionar Bebidas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBebida)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBebida)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,9 +244,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewBebida;
         private System.Windows.Forms.Button buttonAgregar;
         private System.Windows.Forms.Button buttonActualizar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBoxBebida;
+        private System.Windows.Forms.Button buttonImagen;
     }
 }

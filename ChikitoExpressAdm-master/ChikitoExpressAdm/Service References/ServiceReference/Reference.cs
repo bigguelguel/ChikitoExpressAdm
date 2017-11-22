@@ -166,6 +166,9 @@ namespace ChikitoExpressAdm.ServiceReference {
         private int idTipoPlatoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string imagenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nombreField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -255,6 +258,19 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((this.idTipoPlatoField.Equals(value) != true)) {
                     this.idTipoPlatoField = value;
                     this.RaisePropertyChanged("idTipoPlato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string imagen {
+            get {
+                return this.imagenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.imagenField, value) != true)) {
+                    this.imagenField = value;
+                    this.RaisePropertyChanged("imagen");
                 }
             }
         }
@@ -499,6 +515,9 @@ namespace ChikitoExpressAdm.ServiceReference {
         private int idTipoBebidaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string imagenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int precioField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -598,6 +617,19 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((this.idTipoBebidaField.Equals(value) != true)) {
                     this.idTipoBebidaField = value;
                     this.RaisePropertyChanged("idTipoBebida");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string imagen {
+            get {
+                return this.imagenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.imagenField, value) != true)) {
+                    this.imagenField = value;
+                    this.RaisePropertyChanged("imagen");
                 }
             }
         }

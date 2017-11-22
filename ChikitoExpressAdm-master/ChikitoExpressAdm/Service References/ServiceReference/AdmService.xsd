@@ -31,6 +31,7 @@
       <xs:element minOccurs="0" name="estado" type="xs:boolean" />
       <xs:element minOccurs="0" name="idPlato" type="xs:int" />
       <xs:element minOccurs="0" name="idTipoPlato" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="precio" type="xs:int" />
     </xs:sequence>
@@ -65,6 +66,7 @@
       <xs:element minOccurs="0" name="estado" type="xs:boolean" />
       <xs:element minOccurs="0" name="idBebida" type="xs:int" />
       <xs:element minOccurs="0" name="idTipoBebida" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="precio" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
