@@ -142,39 +142,41 @@
             // dataGridViewBebida
             // 
             this.dataGridViewBebida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBebida.Location = new System.Drawing.Point(12, 344);
+            this.dataGridViewBebida.Location = new System.Drawing.Point(3, 405);
             this.dataGridViewBebida.Name = "dataGridViewBebida";
-            this.dataGridViewBebida.Size = new System.Drawing.Size(523, 137);
+            this.dataGridViewBebida.Size = new System.Drawing.Size(541, 137);
             this.dataGridViewBebida.TabIndex = 18;
+            this.dataGridViewBebida.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBebida_CellClick);
             // 
             // buttonAgregar
             // 
             this.buttonAgregar.AccessibleDescription = "";
             this.buttonAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAgregar.Location = new System.Drawing.Point(79, 226);
+            this.buttonAgregar.Location = new System.Drawing.Point(79, 372);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(111, 27);
             this.buttonAgregar.TabIndex = 19;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = true;
-            this.buttonAgregar.Click += new System.EventHandler(this.bttActualizar_Click);
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // buttonActualizar
             // 
             this.buttonActualizar.AccessibleDescription = "";
             this.buttonActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonActualizar.Location = new System.Drawing.Point(294, 487);
+            this.buttonActualizar.Location = new System.Drawing.Point(228, 372);
             this.buttonActualizar.Name = "buttonActualizar";
             this.buttonActualizar.Size = new System.Drawing.Size(111, 27);
             this.buttonActualizar.TabIndex = 20;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // button2
             // 
             this.button2.AccessibleDescription = "bttCrearPais";
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(424, 487);
+            this.button2.Location = new System.Drawing.Point(360, 372);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 27);
             this.button2.TabIndex = 21;
@@ -185,7 +187,7 @@
             // 
             this.pictureBoxBebida.Location = new System.Drawing.Point(280, 259);
             this.pictureBoxBebida.Name = "pictureBoxBebida";
-            this.pictureBoxBebida.Size = new System.Drawing.Size(189, 79);
+            this.pictureBoxBebida.Size = new System.Drawing.Size(189, 107);
             this.pictureBoxBebida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBebida.TabIndex = 22;
             this.pictureBoxBebida.TabStop = false;
@@ -194,7 +196,7 @@
             // 
             this.buttonImagen.AccessibleDescription = "";
             this.buttonImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonImagen.Location = new System.Drawing.Point(79, 285);
+            this.buttonImagen.Location = new System.Drawing.Point(79, 274);
             this.buttonImagen.Name = "buttonImagen";
             this.buttonImagen.Size = new System.Drawing.Size(111, 27);
             this.buttonImagen.TabIndex = 23;
@@ -206,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 518);
+            this.ClientSize = new System.Drawing.Size(547, 545);
             this.Controls.Add(this.buttonImagen);
             this.Controls.Add(this.pictureBoxBebida);
             this.Controls.Add(this.button2);

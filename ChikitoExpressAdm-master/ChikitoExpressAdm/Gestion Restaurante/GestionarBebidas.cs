@@ -16,35 +16,26 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
     {
         AdmServiceClient client;
         public string Imagen { get; set; }
+        List<Boison> boisones;
         public GestionarBebidas()
         {
             InitializeComponent();
             client = new AdmServiceClient();
+            boisones = new List<Boison>();
             UpdateComboBoxTiboBebida();
             UpdateDataGridViewBebida();
+            
         }
         public class Boison
         {
             public String Nombre { get; set; }
             public int Precio { get; set; }
             public string Categoria { get; set; }
+            public string Descripcion { get; set; }
             public bool Estado { get; set; }
+            
         }
-        private void bttActualizar_Click(object sender, EventArgs e)
-        {
-            var tipoBebidas = client.GetTipoBebidas();
-            Bebida bebida = new Bebida
-            {
-                Nombre = textBoxNombre.Text,
-                precio = int.Parse(textBoxPrecio.Text),
-                imagen = Imagen,
-                estado = radioButton1.Checked,
-                descripcion = textBoxDescripcion.Text,
-                idTipoBebida = tipoBebidas.ElementAt(comboBoxTipoBebida.SelectedIndex).idTipoBebida
-            };
-            client.PostBebida(bebida);
-            UpdateDataGridViewBebida();
-        }
+     
         public void UpdateComboBoxTiboBebida()
         {
             var tipoBebidas = client.GetTipoBebidas();
@@ -79,7 +70,7 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
         {
             var bebidas = client.GetBebida();
             var tipoBebidas = client.GetTipoBebidas();
-            List<Boison> boisones = new List<Boison>();
+            boisones = new List<Boison>();
             foreach(var b in bebidas)
             {
                 Boison bo = new Boison
@@ -87,11 +78,56 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
                     Nombre = b.Nombre,
                     Precio = b.precio,
                     Categoria = (from t in tipoBebidas where t.idTipoBebida == b.idTipoBebida select t.nombre).ElementAt(0),
-                    Estado = b.estado
+                    Estado = b.estado,
+                    Descripcion = b.descripcion
                 };
                 boisones.Add(bo);
             }
             dataGridViewBebida.DataSource = boisones;
+        }
+
+        private void dataGridViewBebida_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBoxNombre.Text = boisones.ElementAt(dataGridViewBebida.CurrentRow.Index).Nombre;
+            textBoxPrecio.Text = boisones.ElementAt(dataGridViewBebida.CurrentRow.Index).Precio.ToString();
+            textBoxDescripcion.Text = boisones.ElementAt(dataGridViewBebida.CurrentRow.Index).Descripcion;
+            radioButton1.Checked = boisones.ElementAt(dataGridViewBebida.CurrentRow.Index).Estado;
+            var beb = client.GetBebida();
+            Imagen = beb.ElementAt(dataGridViewBebida.CurrentRow.Index).imagen;
+            pictureBoxBebida.Image = Image.FromFile(Imagen);
+        }
+
+        private void buttonActualizar_Click(object sender, EventArgs e)
+        {
+            var tipoBebidas = client.GetTipoBebidas();
+            var beb = client.GetBebida();
+            Bebida bebida = new Bebida
+            {
+                Nombre = textBoxNombre.Text,
+                precio = int.Parse(textBoxPrecio.Text),
+                imagen = Imagen,
+                estado = radioButton1.Checked,
+                descripcion = textBoxDescripcion.Text,
+                idTipoBebida = tipoBebidas.ElementAt(comboBoxTipoBebida.SelectedIndex).idTipoBebida
+            };
+            client.ActualizarBebida(beb.ElementAt(dataGridViewBebida.CurrentRow.Index).idBebida, bebida);
+            UpdateDataGridViewBebida();
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            var tipoBebidas = client.GetTipoBebidas();
+            Bebida bebida = new Bebida
+            {
+                Nombre = textBoxNombre.Text,
+                precio = int.Parse(textBoxPrecio.Text),
+                imagen = Imagen,
+                estado = radioButton1.Checked,
+                descripcion = textBoxDescripcion.Text,
+                idTipoBebida = tipoBebidas.ElementAt(comboBoxTipoBebida.SelectedIndex).idTipoBebida
+            };
+            client.PostBebida(bebida);
+            UpdateDataGridViewBebida();
         }
     }
 }

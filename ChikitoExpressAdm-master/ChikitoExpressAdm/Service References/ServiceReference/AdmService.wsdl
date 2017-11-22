@@ -211,6 +211,18 @@
   <wsdl:message name="IAdmService_ActualizarCliente_OutputMessage">
     <wsdl:part name="parameters" element="tns:ActualizarClienteResponse" />
   </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarBebida_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarBebida" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarBebida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarBebidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarPlato_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarPlato" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_ActualizarPlato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarPlatoResponse" />
+  </wsdl:message>
   <wsdl:portType name="IAdmService">
     <wsdl:operation name="GetTipoPlatos">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetTipoPlatos" message="tns:IAdmService_GetTipoPlatos_InputMessage" />
@@ -347,6 +359,14 @@
     <wsdl:operation name="ActualizarCliente">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/ActualizarCliente" message="tns:IAdmService_ActualizarCliente_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/ActualizarClienteResponse" message="tns:IAdmService_ActualizarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarBebida">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/ActualizarBebida" message="tns:IAdmService_ActualizarBebida_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/ActualizarBebidaResponse" message="tns:IAdmService_ActualizarBebida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPlato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/ActualizarPlato" message="tns:IAdmService_ActualizarPlato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/ActualizarPlatoResponse" message="tns:IAdmService_ActualizarPlato_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAdmService" type="tns:IAdmService">
@@ -650,6 +670,24 @@
     </wsdl:operation>
     <wsdl:operation name="ActualizarCliente">
       <soap:operation soapAction="http://tempuri.org/IAdmService/ActualizarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarBebida">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/ActualizarBebida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPlato">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/ActualizarPlato" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

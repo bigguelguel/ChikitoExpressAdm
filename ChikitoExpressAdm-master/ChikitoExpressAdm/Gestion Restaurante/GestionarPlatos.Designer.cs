@@ -28,82 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.bttActualizar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonActualizar = new System.Windows.Forms.Button();
+            this.bttAgregar = new System.Windows.Forms.Button();
+            this.dataGridViewPlato = new System.Windows.Forms.DataGridView();
+            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxProvencia = new System.Windows.Forms.ComboBox();
-            this.txtbMunicipio = new System.Windows.Forms.TextBox();
+            this.comboBoxTipoPlato = new System.Windows.Forms.ComboBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBoxPlato = new System.Windows.Forms.PictureBox();
+            this.buttonImagen = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlato)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // buttonEliminar
             // 
-            this.button2.AccessibleDescription = "bttCrearPais";
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(424, 485);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 27);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonEliminar.AccessibleDescription = "bttCrearPais";
+            this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminar.Location = new System.Drawing.Point(389, 363);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(111, 27);
+            this.buttonEliminar.TabIndex = 35;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonActualizar
             // 
-            this.button1.AccessibleDescription = "bttCrearPais";
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(294, 485);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 27);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Actualizar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonActualizar.AccessibleDescription = "bttCrearPais";
+            this.buttonActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonActualizar.Location = new System.Drawing.Point(250, 363);
+            this.buttonActualizar.Name = "buttonActualizar";
+            this.buttonActualizar.Size = new System.Drawing.Size(111, 27);
+            this.buttonActualizar.TabIndex = 34;
+            this.buttonActualizar.Text = "Actualizar";
+            this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
-            // bttActualizar
+            // bttAgregar
             // 
-            this.bttActualizar.AccessibleDescription = "bttCrearPais";
-            this.bttActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttActualizar.Location = new System.Drawing.Point(79, 224);
-            this.bttActualizar.Name = "bttActualizar";
-            this.bttActualizar.Size = new System.Drawing.Size(111, 27);
-            this.bttActualizar.TabIndex = 33;
-            this.bttActualizar.Text = "Agregar";
-            this.bttActualizar.UseVisualStyleBackColor = true;
+            this.bttAgregar.AccessibleDescription = "bttCrearPais";
+            this.bttAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAgregar.Location = new System.Drawing.Point(79, 363);
+            this.bttAgregar.Name = "bttAgregar";
+            this.bttAgregar.Size = new System.Drawing.Size(111, 27);
+            this.bttAgregar.TabIndex = 33;
+            this.bttAgregar.Text = "Agregar";
+            this.bttAgregar.UseVisualStyleBackColor = true;
+            this.bttAgregar.Click += new System.EventHandler(this.bttAgregar_Click);
             // 
-            // dataGridView1
+            // dataGridViewPlato
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 267);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 212);
-            this.dataGridView1.TabIndex = 32;
+            this.dataGridViewPlato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPlato.Location = new System.Drawing.Point(2, 396);
+            this.dataGridViewPlato.Name = "dataGridViewPlato";
+            this.dataGridViewPlato.Size = new System.Drawing.Size(544, 158);
+            this.dataGridViewPlato.TabIndex = 32;
+            this.dataGridViewPlato.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPlato_CellClick);
             // 
-            // radioButton1
+            // textBoxDescripcion
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(411, 135);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 17);
-            this.radioButton1.TabIndex = 31;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Estado";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(280, 171);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 80);
-            this.textBox2.TabIndex = 30;
+            this.textBoxDescripcion.Location = new System.Drawing.Point(280, 171);
+            this.textBoxDescripcion.Multiline = true;
+            this.textBoxDescripcion.Name = "textBoxDescripcion";
+            this.textBoxDescripcion.Size = new System.Drawing.Size(191, 80);
+            this.textBoxDescripcion.TabIndex = 30;
             // 
             // label5
             // 
@@ -115,12 +110,12 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Descripción: ";
             // 
-            // textBox1
+            // textBoxPrecio
             // 
-            this.textBox1.Location = new System.Drawing.Point(280, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(106, 20);
-            this.textBox1.TabIndex = 28;
+            this.textBoxPrecio.Location = new System.Drawing.Point(280, 133);
+            this.textBoxPrecio.Name = "textBoxPrecio";
+            this.textBoxPrecio.Size = new System.Drawing.Size(106, 20);
+            this.textBoxPrecio.TabIndex = 28;
             // 
             // label4
             // 
@@ -132,20 +127,20 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Precio:";
             // 
-            // comboBoxProvencia
+            // comboBoxTipoPlato
             // 
-            this.comboBoxProvencia.FormattingEnabled = true;
-            this.comboBoxProvencia.Location = new System.Drawing.Point(280, 90);
-            this.comboBoxProvencia.Name = "comboBoxProvencia";
-            this.comboBoxProvencia.Size = new System.Drawing.Size(183, 21);
-            this.comboBoxProvencia.TabIndex = 26;
+            this.comboBoxTipoPlato.FormattingEnabled = true;
+            this.comboBoxTipoPlato.Location = new System.Drawing.Point(280, 90);
+            this.comboBoxTipoPlato.Name = "comboBoxTipoPlato";
+            this.comboBoxTipoPlato.Size = new System.Drawing.Size(183, 21);
+            this.comboBoxTipoPlato.TabIndex = 26;
             // 
-            // txtbMunicipio
+            // textBoxNombre
             // 
-            this.txtbMunicipio.Location = new System.Drawing.Point(280, 51);
-            this.txtbMunicipio.Name = "txtbMunicipio";
-            this.txtbMunicipio.Size = new System.Drawing.Size(183, 20);
-            this.txtbMunicipio.TabIndex = 25;
+            this.textBoxNombre.Location = new System.Drawing.Point(280, 51);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(183, 20);
+            this.textBoxNombre.TabIndex = 25;
             // 
             // label3
             // 
@@ -177,28 +172,62 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Agregar Plato";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(430, 135);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 17);
+            this.checkBox1.TabIndex = 36;
+            this.checkBox1.Text = "Estado";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxPlato
+            // 
+            this.pictureBoxPlato.Location = new System.Drawing.Point(280, 258);
+            this.pictureBoxPlato.Name = "pictureBoxPlato";
+            this.pictureBoxPlato.Size = new System.Drawing.Size(191, 99);
+            this.pictureBoxPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPlato.TabIndex = 37;
+            this.pictureBoxPlato.TabStop = false;
+            // 
+            // buttonImagen
+            // 
+            this.buttonImagen.AccessibleDescription = "bttCrearPais";
+            this.buttonImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonImagen.Location = new System.Drawing.Point(79, 258);
+            this.buttonImagen.Name = "buttonImagen";
+            this.buttonImagen.Size = new System.Drawing.Size(111, 27);
+            this.buttonImagen.TabIndex = 38;
+            this.buttonImagen.Text = "Imagen";
+            this.buttonImagen.UseVisualStyleBackColor = true;
+            this.buttonImagen.Click += new System.EventHandler(this.buttonImagen_Click);
+            // 
             // GestionarPlatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 518);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bttActualizar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(547, 556);
+            this.Controls.Add(this.buttonImagen);
+            this.Controls.Add(this.pictureBoxPlato);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.buttonEliminar);
+            this.Controls.Add(this.buttonActualizar);
+            this.Controls.Add(this.bttAgregar);
+            this.Controls.Add(this.dataGridViewPlato);
+            this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPrecio);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxProvencia);
-            this.Controls.Add(this.txtbMunicipio);
+            this.Controls.Add(this.comboBoxTipoPlato);
+            this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "GestionarPlatos";
             this.Text = "Gestionar Platos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,19 +235,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button bttActualizar;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonActualizar;
+        private System.Windows.Forms.Button bttAgregar;
+        private System.Windows.Forms.DataGridView dataGridViewPlato;
+        private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxProvencia;
-        private System.Windows.Forms.TextBox txtbMunicipio;
+        private System.Windows.Forms.ComboBox comboBoxTipoPlato;
+        private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pictureBoxPlato;
+        private System.Windows.Forms.Button buttonImagen;
     }
 }

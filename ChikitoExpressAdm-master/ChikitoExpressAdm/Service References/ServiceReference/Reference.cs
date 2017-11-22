@@ -5090,6 +5090,18 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarCliente", ReplyAction="http://tempuri.org/IAdmService/ActualizarClienteResponse")]
         System.Threading.Tasks.Task ActualizarClienteAsync(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarBebida", ReplyAction="http://tempuri.org/IAdmService/ActualizarBebidaResponse")]
+        void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarBebida", ReplyAction="http://tempuri.org/IAdmService/ActualizarBebidaResponse")]
+        System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarPlato", ReplyAction="http://tempuri.org/IAdmService/ActualizarPlatoResponse")]
+        void ActualizarPlato(int id, ChikitoExpressAdm.ServiceReference.Plato plat);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarPlato", ReplyAction="http://tempuri.org/IAdmService/ActualizarPlatoResponse")]
+        System.Threading.Tasks.Task ActualizarPlatoAsync(int id, ChikitoExpressAdm.ServiceReference.Plato plat);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -5389,6 +5401,22 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         public System.Threading.Tasks.Task ActualizarClienteAsync(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser) {
             return base.Channel.ActualizarClienteAsync(cliente, iduser);
+        }
+        
+        public void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida) {
+            base.Channel.ActualizarBebida(id, bebida);
+        }
+        
+        public System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida) {
+            return base.Channel.ActualizarBebidaAsync(id, bebida);
+        }
+        
+        public void ActualizarPlato(int id, ChikitoExpressAdm.ServiceReference.Plato plat) {
+            base.Channel.ActualizarPlato(id, plat);
+        }
+        
+        public System.Threading.Tasks.Task ActualizarPlatoAsync(int id, ChikitoExpressAdm.ServiceReference.Plato plat) {
+            return base.Channel.ActualizarPlatoAsync(id, plat);
         }
     }
 }
