@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -96,17 +97,17 @@
     <Compile Include="Gestion Clientes\CrearClientes.Designer.cs">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gestion Ordenes\Crear Orden Empleado ADM.cs">
+    <Compile Include="Gestion Ordenes\Crear Ordenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gestion Ordenes\Crear Orden Empleado ADM.Designer.cs">
-      <DependentUpon>Crear Orden Empleado ADM.cs</DependentUpon>
+    <Compile Include="Gestion Ordenes\Crear Ordenes.Designer.cs">
+      <DependentUpon>Crear Ordenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gestion Ordenes\Gestion OrdenesADM.cs">
+    <Compile Include="Gestion Ordenes\Modificar Ordenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gestion Ordenes\Gestion OrdenesADM.Designer.cs">
-      <DependentUpon>Gestion OrdenesADM.cs</DependentUpon>
+    <Compile Include="Gestion Ordenes\Modificar Ordenes.Designer.cs">
+      <DependentUpon>Modificar Ordenes.cs</DependentUpon>
     </Compile>
     <Compile Include="Gestion Restaurante\GestionarBebidas.cs">
       <SubType>Form</SubType>
@@ -175,11 +176,11 @@
     <EmbeddedResource Include="Gestion Clientes\CrearClientes.resx">
       <DependentUpon>CrearClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gestion Ordenes\Crear Orden Empleado ADM.resx">
-      <DependentUpon>Crear Orden Empleado ADM.cs</DependentUpon>
+    <EmbeddedResource Include="Gestion Ordenes\Crear Ordenes.resx">
+      <DependentUpon>Crear Ordenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gestion Ordenes\Gestion OrdenesADM.resx">
-      <DependentUpon>Gestion OrdenesADM.cs</DependentUpon>
+    <EmbeddedResource Include="Gestion Ordenes\Modificar Ordenes.resx">
+      <DependentUpon>Modificar Ordenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Restaurante\GestionarBebidas.resx">
       <DependentUpon>GestionarBebidas.cs</DependentUpon>
