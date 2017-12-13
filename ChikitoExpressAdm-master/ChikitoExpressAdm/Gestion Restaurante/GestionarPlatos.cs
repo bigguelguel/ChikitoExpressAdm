@@ -87,7 +87,7 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
             textBoxPrecio.Text = Platos.ElementAt(dataGridViewPlato.CurrentRow.Index).Precio.ToString();
             textBoxDescripcion.Text = Platos.ElementAt(dataGridViewPlato.CurrentRow.Index).Descripcion;
             checkBox1.Checked = Platos.ElementAt(dataGridViewPlato.CurrentRow.Index).Estado;
-            var beb = client.GetBebida();
+            var beb = client.GetPlato();
             Imagen = beb.ElementAt(dataGridViewPlato.CurrentRow.Index).imagen;
             pictureBoxPlato.Image = Image.FromFile(Imagen);
         }

@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 556);
+            this.ClientSize = new System.Drawing.Size(585, 556);
             this.Controls.Add(this.buttonImagen);
             this.Controls.Add(this.pictureBoxPlato);
             this.Controls.Add(this.checkBox1);

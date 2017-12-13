@@ -28,7 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxContrasena = new System.Windows.Forms.TextBox();
+            this.textBoxUsuario = new System.Windows.Forms.TextBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelPlato = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelBebida = new System.Windows.Forms.Panel();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.buttonPlatoLeft = new System.Windows.Forms.Button();
+            this.buttonPlatoRight = new System.Windows.Forms.Button();
+            this.buttonBebidaLeft = new System.Windows.Forms.Button();
+            this.buttonBebidaRight = new System.Windows.Forms.Button();
             this.gestionLugaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.provenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,24 +86,323 @@
             this.gestionSurcusalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.comboBoxMenu = new System.Windows.Forms.ComboBox();
+            this.comboBoxTipoPlato = new System.Windows.Forms.ComboBox();
+            this.comboBoxTipoBebida = new System.Windows.Forms.ComboBox();
+            this.panel1.SuspendLayout();
+            this.panelPlato.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelBebida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panel1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionLugaresToolStripMenuItem,
-            this.gestionClientesToolStripMenuItem,
-            this.gestionAdmToolStripMenuItem,
-            this.gestionRestoranteToolStripMenuItem,
-            this.gestionEnviosToolStripMenuItem,
-            this.datosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(920, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
-            
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textBoxContrasena);
+            this.panel1.Controls.Add(this.textBoxUsuario);
+            this.panel1.Controls.Add(this.buttonLogin);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(94, 117);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(134, 262);
+            this.panel1.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(256, 254);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "label3";
+            // 
+            // textBoxContrasena
+            // 
+            this.textBoxContrasena.Location = new System.Drawing.Point(239, 149);
+            this.textBoxContrasena.Name = "textBoxContrasena";
+            this.textBoxContrasena.Size = new System.Drawing.Size(184, 20);
+            this.textBoxContrasena.TabIndex = 4;
+            this.textBoxContrasena.UseSystemPasswordChar = true;
+            // 
+            // textBoxUsuario
+            // 
+            this.textBoxUsuario.Location = new System.Drawing.Point(239, 100);
+            this.textBoxUsuario.Name = "textBoxUsuario";
+            this.textBoxUsuario.Size = new System.Drawing.Size(184, 20);
+            this.textBoxUsuario.TabIndex = 3;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.Location = new System.Drawing.Point(288, 195);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(94, 42);
+            this.buttonLogin.TabIndex = 2;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(97, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Contrasena";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(132, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Usuario";
+            // 
+            // panelPlato
+            // 
+            this.panelPlato.AutoScroll = true;
+            this.panelPlato.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelPlato.Controls.Add(this.pictureBox8);
+            this.panelPlato.Controls.Add(this.pictureBox7);
+            this.panelPlato.Controls.Add(this.pictureBox6);
+            this.panelPlato.Controls.Add(this.pictureBox5);
+            this.panelPlato.Controls.Add(this.pictureBox4);
+            this.panelPlato.Controls.Add(this.pictureBox3);
+            this.panelPlato.Controls.Add(this.pictureBox2);
+            this.panelPlato.Controls.Add(this.pictureBox1);
+            this.panelPlato.Location = new System.Drawing.Point(12, 27);
+            this.panelPlato.Name = "panelPlato";
+            this.panelPlato.Size = new System.Drawing.Size(338, 481);
+            this.panelPlato.TabIndex = 10;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(170, 345);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(3, 345);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(170, 231);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(3, 231);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(170, 117);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(3, 117);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(170, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelBebida
+            // 
+            this.panelBebida.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelBebida.Controls.Add(this.vScrollBar2);
+            this.panelBebida.Controls.Add(this.pictureBox9);
+            this.panelBebida.Controls.Add(this.pictureBox10);
+            this.panelBebida.Controls.Add(this.pictureBox16);
+            this.panelBebida.Controls.Add(this.pictureBox11);
+            this.panelBebida.Controls.Add(this.pictureBox15);
+            this.panelBebida.Controls.Add(this.panel1);
+            this.panelBebida.Controls.Add(this.pictureBox12);
+            this.panelBebida.Controls.Add(this.pictureBox14);
+            this.panelBebida.Controls.Add(this.pictureBox13);
+            this.panelBebida.Location = new System.Drawing.Point(547, 32);
+            this.panelBebida.Name = "panelBebida";
+            this.panelBebida.Size = new System.Drawing.Size(361, 476);
+            this.panelBebida.TabIndex = 11;
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(341, 3);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(17, 471);
+            this.vScrollBar2.TabIndex = 17;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(170, 345);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox9.TabIndex = 16;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Location = new System.Drawing.Point(3, 345);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox10.TabIndex = 15;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox16.TabIndex = 9;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(170, 231);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox11.TabIndex = 14;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Location = new System.Drawing.Point(170, 3);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox15.TabIndex = 10;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Location = new System.Drawing.Point(3, 231);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox12.TabIndex = 13;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Location = new System.Drawing.Point(3, 117);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox14.TabIndex = 11;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Location = new System.Drawing.Point(170, 117);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox13.TabIndex = 12;
+            this.pictureBox13.TabStop = false;
+            // 
+            // buttonPlatoLeft
+            // 
+            this.buttonPlatoLeft.BackColor = System.Drawing.Color.White;
+            this.buttonPlatoLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlatoLeft.BackgroundImage")));
+            this.buttonPlatoLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPlatoLeft.Location = new System.Drawing.Point(352, 27);
+            this.buttonPlatoLeft.Name = "buttonPlatoLeft";
+            this.buttonPlatoLeft.Size = new System.Drawing.Size(75, 50);
+            this.buttonPlatoLeft.TabIndex = 12;
+            this.buttonPlatoLeft.UseVisualStyleBackColor = false;
+            this.buttonPlatoLeft.Click += new System.EventHandler(this.buttonPlatoLeft_Click);
+            // 
+            // buttonPlatoRight
+            // 
+            this.buttonPlatoRight.BackColor = System.Drawing.Color.White;
+            this.buttonPlatoRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPlatoRight.BackgroundImage")));
+            this.buttonPlatoRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPlatoRight.Location = new System.Drawing.Point(352, 83);
+            this.buttonPlatoRight.Name = "buttonPlatoRight";
+            this.buttonPlatoRight.Size = new System.Drawing.Size(75, 50);
+            this.buttonPlatoRight.TabIndex = 13;
+            this.buttonPlatoRight.UseVisualStyleBackColor = false;
+            // 
+            // buttonBebidaLeft
+            // 
+            this.buttonBebidaLeft.BackColor = System.Drawing.Color.White;
+            this.buttonBebidaLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBebidaLeft.BackgroundImage")));
+            this.buttonBebidaLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonBebidaLeft.Location = new System.Drawing.Point(466, 83);
+            this.buttonBebidaLeft.Name = "buttonBebidaLeft";
+            this.buttonBebidaLeft.Size = new System.Drawing.Size(75, 50);
+            this.buttonBebidaLeft.TabIndex = 14;
+            this.buttonBebidaLeft.UseVisualStyleBackColor = false;
+            // 
+            // buttonBebidaRight
+            // 
+            this.buttonBebidaRight.BackColor = System.Drawing.Color.White;
+            this.buttonBebidaRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBebidaRight.BackgroundImage")));
+            this.buttonBebidaRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonBebidaRight.Location = new System.Drawing.Point(466, 27);
+            this.buttonBebidaRight.Name = "buttonBebidaRight";
+            this.buttonBebidaRight.Size = new System.Drawing.Size(75, 50);
+            this.buttonBebidaRight.TabIndex = 15;
+            this.buttonBebidaRight.UseVisualStyleBackColor = false;
+            // 
             // gestionLugaresToolStripMenuItem
             // 
             this.gestionLugaresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -277,15 +606,83 @@
             this.recuperarDatosToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.recuperarDatosToolStripMenuItem.Text = "Recuperar Datos";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionLugaresToolStripMenuItem,
+            this.gestionClientesToolStripMenuItem,
+            this.gestionAdmToolStripMenuItem,
+            this.gestionRestoranteToolStripMenuItem,
+            this.gestionEnviosToolStripMenuItem,
+            this.datosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(920, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // comboBoxMenu
+            // 
+            this.comboBoxMenu.FormattingEnabled = true;
+            this.comboBoxMenu.Location = new System.Drawing.Point(368, 172);
+            this.comboBoxMenu.Name = "comboBoxMenu";
+            this.comboBoxMenu.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxMenu.TabIndex = 17;
+            // 
+            // comboBoxTipoPlato
+            // 
+            this.comboBoxTipoPlato.FormattingEnabled = true;
+            this.comboBoxTipoPlato.Location = new System.Drawing.Point(368, 208);
+            this.comboBoxTipoPlato.Name = "comboBoxTipoPlato";
+            this.comboBoxTipoPlato.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxTipoPlato.TabIndex = 18;
+            // 
+            // comboBoxTipoBebida
+            // 
+            this.comboBoxTipoBebida.FormattingEnabled = true;
+            this.comboBoxTipoBebida.Location = new System.Drawing.Point(368, 246);
+            this.comboBoxTipoBebida.Name = "comboBoxTipoBebida";
+            this.comboBoxTipoBebida.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxTipoBebida.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 510);
+            this.Controls.Add(this.comboBoxTipoBebida);
+            this.Controls.Add(this.comboBoxTipoPlato);
+            this.Controls.Add(this.comboBoxMenu);
+            this.Controls.Add(this.buttonBebidaRight);
+            this.Controls.Add(this.buttonBebidaLeft);
+            this.Controls.Add(this.buttonPlatoRight);
+            this.Controls.Add(this.buttonPlatoLeft);
+            this.Controls.Add(this.panelBebida);
+            this.Controls.Add(this.panelPlato);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Chikito Express Adm";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panelPlato.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelBebida.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -294,7 +691,36 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBoxContrasena;
+        private System.Windows.Forms.TextBox textBoxUsuario;
+        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panelPlato;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelBebida;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.Button buttonPlatoLeft;
+        private System.Windows.Forms.Button buttonPlatoRight;
+        private System.Windows.Forms.Button buttonBebidaLeft;
+        private System.Windows.Forms.Button buttonBebidaRight;
         private System.Windows.Forms.ToolStripMenuItem gestionLugaresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem provenciaToolStripMenuItem;
@@ -314,14 +740,18 @@
         private System.Windows.Forms.ToolStripMenuItem platosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem gestionEnviosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarOrdenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarOrdenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionEnviosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarEnvioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionSurcusalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuperarDatosToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ComboBox comboBoxMenu;
+        private System.Windows.Forms.ComboBox comboBoxTipoPlato;
+        private System.Windows.Forms.ComboBox comboBoxTipoBebida;
     }
 }
 
