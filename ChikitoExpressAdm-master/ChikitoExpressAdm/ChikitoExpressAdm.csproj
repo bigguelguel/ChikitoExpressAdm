@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -116,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Realizar Orden\Realizar Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Realizar Orden\Realizar Orden.Designer.cs">
+      <DependentUpon>Realizar Orden.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,6 +170,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Realizar Orden\Realizar Orden.resx">
+      <DependentUpon>Realizar Orden.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -192,6 +202,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Direccione.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.ElementosDeMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Menu.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Municipio.datasource">
@@ -224,9 +240,6 @@
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.UsersRole.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.ViewAdministradore.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\ServiceReference\ChikitoExpressAdm.ServiceReference.Zona.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -255,7 +268,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

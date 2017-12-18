@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="59fdcaab-86cb-45bc-bf87-ad6ccacea879" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="de586b6a-b94e-4dc6-8551-bd9869babc23" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:49590/AdmService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AdmService.disco" MetadataType="Disco" ID="49c4a4cf-995c-41ac-9d41-328841874031" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?disco" />
-    <MetadataFile FileName="AdmService.xsd" MetadataType="Schema" ID="1dc1f143-6bfc-4c1e-8c5d-8d4c6cd24625" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd2" />
-    <MetadataFile FileName="AdmService1.xsd" MetadataType="Schema" ID="65d68d44-7735-4ab4-9c31-235045c778e2" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd1" />
-    <MetadataFile FileName="AdmService2.xsd" MetadataType="Schema" ID="5ba9f60f-8595-4873-87fd-63d977a16d06" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd0" />
-    <MetadataFile FileName="AdmService.wsdl" MetadataType="Wsdl" ID="716235e2-e29a-4528-b501-67ccf545bf50" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?wsdl" />
+    <MetadataFile FileName="AdmService.disco" MetadataType="Disco" ID="7a898158-f3f9-47aa-9e32-5b2d5b63403a" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?disco" />
+    <MetadataFile FileName="AdmService.xsd" MetadataType="Schema" ID="bb5b725c-8d13-421c-9707-46c675dc4aaf" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdmService1.xsd" MetadataType="Schema" ID="3820e54a-44ef-4769-85c6-061668e8e451" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdmService2.xsd" MetadataType="Schema" ID="f1360d55-d719-4ad0-86ab-c75227efdd52" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdmService.wsdl" MetadataType="Wsdl" ID="9dbccbd5-5211-4e2d-b36b-3d827b949ced" SourceId="1" SourceUrl="http://localhost:49590/AdmService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

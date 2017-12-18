@@ -15,304 +15,6 @@ namespace ChikitoExpressAdm.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TiposPlato", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
-    [System.SerializableAttribute()]
-    public partial class TiposPlato : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Plato[] PlatosField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool estadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime fechaCreacionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> fechaModicacionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idTipoPlatoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nombreField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Plato[] Platos {
-            get {
-                return this.PlatosField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PlatosField, value) != true)) {
-                    this.PlatosField = value;
-                    this.RaisePropertyChanged("Platos");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                if ((this.estadoField.Equals(value) != true)) {
-                    this.estadoField = value;
-                    this.RaisePropertyChanged("estado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime fechaCreacion {
-            get {
-                return this.fechaCreacionField;
-            }
-            set {
-                if ((this.fechaCreacionField.Equals(value) != true)) {
-                    this.fechaCreacionField = value;
-                    this.RaisePropertyChanged("fechaCreacion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> fechaModicacion {
-            get {
-                return this.fechaModicacionField;
-            }
-            set {
-                if ((this.fechaModicacionField.Equals(value) != true)) {
-                    this.fechaModicacionField = value;
-                    this.RaisePropertyChanged("fechaModicacion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idTipoPlato {
-            get {
-                return this.idTipoPlatoField;
-            }
-            set {
-                if ((this.idTipoPlatoField.Equals(value) != true)) {
-                    this.idTipoPlatoField = value;
-                    this.RaisePropertyChanged("idTipoPlato");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
-                    this.nombreField = value;
-                    this.RaisePropertyChanged("nombre");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Plato", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
-    [System.SerializableAttribute()]
-    public partial class Plato : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] ElementosDeMenusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.TiposPlato TiposPlatoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string descripcionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool estadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idPlatoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idTipoPlatoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string imagenField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nombreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int precioField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] ElementosDeMenus {
-            get {
-                return this.ElementosDeMenusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ElementosDeMenusField, value) != true)) {
-                    this.ElementosDeMenusField = value;
-                    this.RaisePropertyChanged("ElementosDeMenus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.TiposPlato TiposPlato {
-            get {
-                return this.TiposPlatoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TiposPlatoField, value) != true)) {
-                    this.TiposPlatoField = value;
-                    this.RaisePropertyChanged("TiposPlato");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
-                    this.descripcionField = value;
-                    this.RaisePropertyChanged("descripcion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                if ((this.estadoField.Equals(value) != true)) {
-                    this.estadoField = value;
-                    this.RaisePropertyChanged("estado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idPlato {
-            get {
-                return this.idPlatoField;
-            }
-            set {
-                if ((this.idPlatoField.Equals(value) != true)) {
-                    this.idPlatoField = value;
-                    this.RaisePropertyChanged("idPlato");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idTipoPlato {
-            get {
-                return this.idTipoPlatoField;
-            }
-            set {
-                if ((this.idTipoPlatoField.Equals(value) != true)) {
-                    this.idTipoPlatoField = value;
-                    this.RaisePropertyChanged("idTipoPlato");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string imagen {
-            get {
-                return this.imagenField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.imagenField, value) != true)) {
-                    this.imagenField = value;
-                    this.RaisePropertyChanged("imagen");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
-                    this.nombreField = value;
-                    this.RaisePropertyChanged("nombre");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int precio {
-            get {
-                return this.precioField;
-            }
-            set {
-                if ((this.precioField.Equals(value) != true)) {
-                    this.precioField = value;
-                    this.RaisePropertyChanged("precio");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ElementosDeMenu", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
     [System.SerializableAttribute()]
     public partial class ElementosDeMenu : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -681,6 +383,9 @@ namespace ChikitoExpressAdm.ServiceReference {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idMenuField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -752,6 +457,192 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((this.idMenuField.Equals(value) != true)) {
                     this.idMenuField = value;
                     this.RaisePropertyChanged("idMenu");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Plato", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
+    [System.SerializableAttribute()]
+    public partial class Plato : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] ElementosDeMenusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ChikitoExpressAdm.ServiceReference.TiposPlato TiposPlatoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool estadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idPlatoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idTipoPlatoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string imagenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombreField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int precioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] ElementosDeMenus {
+            get {
+                return this.ElementosDeMenusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ElementosDeMenusField, value) != true)) {
+                    this.ElementosDeMenusField = value;
+                    this.RaisePropertyChanged("ElementosDeMenus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ChikitoExpressAdm.ServiceReference.TiposPlato TiposPlato {
+            get {
+                return this.TiposPlatoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TiposPlatoField, value) != true)) {
+                    this.TiposPlatoField = value;
+                    this.RaisePropertyChanged("TiposPlato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                if ((this.estadoField.Equals(value) != true)) {
+                    this.estadoField = value;
+                    this.RaisePropertyChanged("estado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idPlato {
+            get {
+                return this.idPlatoField;
+            }
+            set {
+                if ((this.idPlatoField.Equals(value) != true)) {
+                    this.idPlatoField = value;
+                    this.RaisePropertyChanged("idPlato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int idTipoPlato {
+            get {
+                return this.idTipoPlatoField;
+            }
+            set {
+                if ((this.idTipoPlatoField.Equals(value) != true)) {
+                    this.idTipoPlatoField = value;
+                    this.RaisePropertyChanged("idTipoPlato");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string imagen {
+            get {
+                return this.imagenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.imagenField, value) != true)) {
+                    this.imagenField = value;
+                    this.RaisePropertyChanged("imagen");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int precio {
+            get {
+                return this.precioField;
+            }
+            set {
+                if ((this.precioField.Equals(value) != true)) {
+                    this.precioField = value;
+                    this.RaisePropertyChanged("precio");
                 }
             }
         }
@@ -1013,9 +904,6 @@ namespace ChikitoExpressAdm.ServiceReference {
         private ChikitoExpressAdm.ServiceReference.Direccione DireccioneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Factura[] FacturasField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ChikitoExpressAdm.ServiceReference.OrdenesDetalle[] OrdenesDetallesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1055,19 +943,6 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((object.ReferenceEquals(this.DireccioneField, value) != true)) {
                     this.DireccioneField = value;
                     this.RaisePropertyChanged("Direccione");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Factura[] Facturas {
-            get {
-                return this.FacturasField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FacturasField, value) != true)) {
-                    this.FacturasField = value;
-                    this.RaisePropertyChanged("Facturas");
                 }
             }
         }
@@ -1364,179 +1239,6 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((this.idZonaField.Equals(value) != true)) {
                     this.idZonaField = value;
                     this.RaisePropertyChanged("idZona");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Factura", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
-    [System.SerializableAttribute()]
-    public partial class Factura : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Cliente ClienteField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Descuento DescuentoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Empleado EmpleadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Ordene OrdeneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idClienteField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> idDescuentosField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idEmpleadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idFacturasField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idOrdenField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Cliente Cliente {
-            get {
-                return this.ClienteField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ClienteField, value) != true)) {
-                    this.ClienteField = value;
-                    this.RaisePropertyChanged("Cliente");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Descuento Descuento {
-            get {
-                return this.DescuentoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescuentoField, value) != true)) {
-                    this.DescuentoField = value;
-                    this.RaisePropertyChanged("Descuento");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Empleado Empleado {
-            get {
-                return this.EmpleadoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmpleadoField, value) != true)) {
-                    this.EmpleadoField = value;
-                    this.RaisePropertyChanged("Empleado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Ordene Ordene {
-            get {
-                return this.OrdeneField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrdeneField, value) != true)) {
-                    this.OrdeneField = value;
-                    this.RaisePropertyChanged("Ordene");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idCliente {
-            get {
-                return this.idClienteField;
-            }
-            set {
-                if ((this.idClienteField.Equals(value) != true)) {
-                    this.idClienteField = value;
-                    this.RaisePropertyChanged("idCliente");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> idDescuentos {
-            get {
-                return this.idDescuentosField;
-            }
-            set {
-                if ((this.idDescuentosField.Equals(value) != true)) {
-                    this.idDescuentosField = value;
-                    this.RaisePropertyChanged("idDescuentos");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idEmpleado {
-            get {
-                return this.idEmpleadoField;
-            }
-            set {
-                if ((this.idEmpleadoField.Equals(value) != true)) {
-                    this.idEmpleadoField = value;
-                    this.RaisePropertyChanged("idEmpleado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idFacturas {
-            get {
-                return this.idFacturasField;
-            }
-            set {
-                if ((this.idFacturasField.Equals(value) != true)) {
-                    this.idFacturasField = value;
-                    this.RaisePropertyChanged("idFacturas");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idOrden {
-            get {
-                return this.idOrdenField;
-            }
-            set {
-                if ((this.idOrdenField.Equals(value) != true)) {
-                    this.idOrdenField = value;
-                    this.RaisePropertyChanged("idOrden");
                 }
             }
         }
@@ -2336,9 +2038,6 @@ namespace ChikitoExpressAdm.ServiceReference {
         private ChikitoExpressAdm.ServiceReference.Envio[] EnviosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Factura[] FacturasField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> IdUserField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2381,19 +2080,6 @@ namespace ChikitoExpressAdm.ServiceReference {
                 if ((object.ReferenceEquals(this.EnviosField, value) != true)) {
                     this.EnviosField = value;
                     this.RaisePropertyChanged("Envios");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Factura[] Facturas {
-            get {
-                return this.FacturasField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FacturasField, value) != true)) {
-                    this.FacturasField = value;
-                    this.RaisePropertyChanged("Facturas");
                 }
             }
         }
@@ -2522,9 +2208,6 @@ namespace ChikitoExpressAdm.ServiceReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Factura[] FacturasField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdUserField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2552,19 +2235,6 @@ namespace ChikitoExpressAdm.ServiceReference {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Factura[] Facturas {
-            get {
-                return this.FacturasField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FacturasField, value) != true)) {
-                    this.FacturasField = value;
-                    this.RaisePropertyChanged("Facturas");
-                }
             }
         }
         
@@ -3847,147 +3517,6 @@ namespace ChikitoExpressAdm.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Descuento", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
-    [System.SerializableAttribute()]
-    public partial class Descuento : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ChikitoExpressAdm.ServiceReference.Factura[] FacturasField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> FechaModicacionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool estadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime fechaCreacionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idDescuentosField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nombreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal porcentageField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ChikitoExpressAdm.ServiceReference.Factura[] Facturas {
-            get {
-                return this.FacturasField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FacturasField, value) != true)) {
-                    this.FacturasField = value;
-                    this.RaisePropertyChanged("Facturas");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> FechaModicacion {
-            get {
-                return this.FechaModicacionField;
-            }
-            set {
-                if ((this.FechaModicacionField.Equals(value) != true)) {
-                    this.FechaModicacionField = value;
-                    this.RaisePropertyChanged("FechaModicacion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                if ((this.estadoField.Equals(value) != true)) {
-                    this.estadoField = value;
-                    this.RaisePropertyChanged("estado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime fechaCreacion {
-            get {
-                return this.fechaCreacionField;
-            }
-            set {
-                if ((this.fechaCreacionField.Equals(value) != true)) {
-                    this.fechaCreacionField = value;
-                    this.RaisePropertyChanged("fechaCreacion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idDescuentos {
-            get {
-                return this.idDescuentosField;
-            }
-            set {
-                if ((this.idDescuentosField.Equals(value) != true)) {
-                    this.idDescuentosField = value;
-                    this.RaisePropertyChanged("idDescuentos");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
-                    this.nombreField = value;
-                    this.RaisePropertyChanged("nombre");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal porcentage {
-            get {
-                return this.porcentageField;
-            }
-            set {
-                if ((this.porcentageField.Equals(value) != true)) {
-                    this.porcentageField = value;
-                    this.RaisePropertyChanged("porcentage");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Role", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
     [System.SerializableAttribute()]
     public partial class Role : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -4568,66 +4097,30 @@ namespace ChikitoExpressAdm.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ViewAdministradore", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TiposPlato", Namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService")]
     [System.SerializableAttribute()]
-    public partial class ViewAdministradore : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class TiposPlato : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool ActivoField;
+        private ChikitoExpressAdm.ServiceReference.Plato[] PlatosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AptField;
+        private bool estadoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DocumentoField;
+        private System.DateTime fechaCreacionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EdificioField;
+        private System.Nullable<System.DateTime> fechaModicacionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ZonaField;
+        private int idTipoPlatoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string calleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string casaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string emailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime fechaNacimientoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int idAdmField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string idUserNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool loginEstadoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string primerApellidoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string primerNombreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int salarioField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string segundoApellidoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string segundoNombreField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string telefonoField;
+        private string nombreField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -4640,235 +4133,79 @@ namespace ChikitoExpressAdm.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool Activo {
+        public ChikitoExpressAdm.ServiceReference.Plato[] Platos {
             get {
-                return this.ActivoField;
+                return this.PlatosField;
             }
             set {
-                if ((this.ActivoField.Equals(value) != true)) {
-                    this.ActivoField = value;
-                    this.RaisePropertyChanged("Activo");
+                if ((object.ReferenceEquals(this.PlatosField, value) != true)) {
+                    this.PlatosField = value;
+                    this.RaisePropertyChanged("Platos");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Apt {
+        public bool estado {
             get {
-                return this.AptField;
+                return this.estadoField;
             }
             set {
-                if ((object.ReferenceEquals(this.AptField, value) != true)) {
-                    this.AptField = value;
-                    this.RaisePropertyChanged("Apt");
+                if ((this.estadoField.Equals(value) != true)) {
+                    this.estadoField = value;
+                    this.RaisePropertyChanged("estado");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Documento {
+        public System.DateTime fechaCreacion {
             get {
-                return this.DocumentoField;
+                return this.fechaCreacionField;
             }
             set {
-                if ((object.ReferenceEquals(this.DocumentoField, value) != true)) {
-                    this.DocumentoField = value;
-                    this.RaisePropertyChanged("Documento");
+                if ((this.fechaCreacionField.Equals(value) != true)) {
+                    this.fechaCreacionField = value;
+                    this.RaisePropertyChanged("fechaCreacion");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Edificio {
+        public System.Nullable<System.DateTime> fechaModicacion {
             get {
-                return this.EdificioField;
+                return this.fechaModicacionField;
             }
             set {
-                if ((object.ReferenceEquals(this.EdificioField, value) != true)) {
-                    this.EdificioField = value;
-                    this.RaisePropertyChanged("Edificio");
+                if ((this.fechaModicacionField.Equals(value) != true)) {
+                    this.fechaModicacionField = value;
+                    this.RaisePropertyChanged("fechaModicacion");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Zona {
+        public int idTipoPlato {
             get {
-                return this.ZonaField;
+                return this.idTipoPlatoField;
             }
             set {
-                if ((object.ReferenceEquals(this.ZonaField, value) != true)) {
-                    this.ZonaField = value;
-                    this.RaisePropertyChanged("Zona");
+                if ((this.idTipoPlatoField.Equals(value) != true)) {
+                    this.idTipoPlatoField = value;
+                    this.RaisePropertyChanged("idTipoPlato");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string calle {
+        public string nombre {
             get {
-                return this.calleField;
+                return this.nombreField;
             }
             set {
-                if ((object.ReferenceEquals(this.calleField, value) != true)) {
-                    this.calleField = value;
-                    this.RaisePropertyChanged("calle");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string casa {
-            get {
-                return this.casaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.casaField, value) != true)) {
-                    this.casaField = value;
-                    this.RaisePropertyChanged("casa");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string email {
-            get {
-                return this.emailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.emailField, value) != true)) {
-                    this.emailField = value;
-                    this.RaisePropertyChanged("email");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime fechaNacimiento {
-            get {
-                return this.fechaNacimientoField;
-            }
-            set {
-                if ((this.fechaNacimientoField.Equals(value) != true)) {
-                    this.fechaNacimientoField = value;
-                    this.RaisePropertyChanged("fechaNacimiento");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int idAdm {
-            get {
-                return this.idAdmField;
-            }
-            set {
-                if ((this.idAdmField.Equals(value) != true)) {
-                    this.idAdmField = value;
-                    this.RaisePropertyChanged("idAdm");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string idUserName {
-            get {
-                return this.idUserNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.idUserNameField, value) != true)) {
-                    this.idUserNameField = value;
-                    this.RaisePropertyChanged("idUserName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool loginEstado {
-            get {
-                return this.loginEstadoField;
-            }
-            set {
-                if ((this.loginEstadoField.Equals(value) != true)) {
-                    this.loginEstadoField = value;
-                    this.RaisePropertyChanged("loginEstado");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string primerApellido {
-            get {
-                return this.primerApellidoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.primerApellidoField, value) != true)) {
-                    this.primerApellidoField = value;
-                    this.RaisePropertyChanged("primerApellido");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string primerNombre {
-            get {
-                return this.primerNombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.primerNombreField, value) != true)) {
-                    this.primerNombreField = value;
-                    this.RaisePropertyChanged("primerNombre");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int salario {
-            get {
-                return this.salarioField;
-            }
-            set {
-                if ((this.salarioField.Equals(value) != true)) {
-                    this.salarioField = value;
-                    this.RaisePropertyChanged("salario");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string segundoApellido {
-            get {
-                return this.segundoApellidoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.segundoApellidoField, value) != true)) {
-                    this.segundoApellidoField = value;
-                    this.RaisePropertyChanged("segundoApellido");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string segundoNombre {
-            get {
-                return this.segundoNombreField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.segundoNombreField, value) != true)) {
-                    this.segundoNombreField = value;
-                    this.RaisePropertyChanged("segundoNombre");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string telefono {
-            get {
-                return this.telefonoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.telefonoField, value) != true)) {
-                    this.telefonoField = value;
-                    this.RaisePropertyChanged("telefono");
+                if ((object.ReferenceEquals(this.nombreField, value) != true)) {
+                    this.nombreField = value;
+                    this.RaisePropertyChanged("nombre");
                 }
             }
         }
@@ -4886,6 +4223,30 @@ namespace ChikitoExpressAdm.ServiceReference {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IAdmService")]
     public interface IAdmService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostElementosDeMenu", ReplyAction="http://tempuri.org/IAdmService/PostElementosDeMenuResponse")]
+        void PostElementosDeMenu(ChikitoExpressAdm.ServiceReference.ElementosDeMenu e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostElementosDeMenu", ReplyAction="http://tempuri.org/IAdmService/PostElementosDeMenuResponse")]
+        System.Threading.Tasks.Task PostElementosDeMenuAsync(ChikitoExpressAdm.ServiceReference.ElementosDeMenu e);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetElementosDeMenu", ReplyAction="http://tempuri.org/IAdmService/GetElementosDeMenuResponse")]
+        ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] GetElementosDeMenu();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetElementosDeMenu", ReplyAction="http://tempuri.org/IAdmService/GetElementosDeMenuResponse")]
+        System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.ElementosDeMenu[]> GetElementosDeMenuAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetMenu", ReplyAction="http://tempuri.org/IAdmService/GetMenuResponse")]
+        ChikitoExpressAdm.ServiceReference.Menu[] GetMenu();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetMenu", ReplyAction="http://tempuri.org/IAdmService/GetMenuResponse")]
+        System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.Menu[]> GetMenuAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostMenu", ReplyAction="http://tempuri.org/IAdmService/PostMenuResponse")]
+        void PostMenu(ChikitoExpressAdm.ServiceReference.Menu m);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostMenu", ReplyAction="http://tempuri.org/IAdmService/PostMenuResponse")]
+        System.Threading.Tasks.Task PostMenuAsync(ChikitoExpressAdm.ServiceReference.Menu m);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetTipoPlatos", ReplyAction="http://tempuri.org/IAdmService/GetTipoPlatosResponse")]
         ChikitoExpressAdm.ServiceReference.TiposPlato[] GetTipoPlatos();
@@ -5007,12 +4368,6 @@ namespace ChikitoExpressAdm.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/PostAdministrador", ReplyAction="http://tempuri.org/IAdmService/PostAdministradorResponse")]
         System.Threading.Tasks.Task PostAdministradorAsync(ChikitoExpressAdm.ServiceReference.Administradore adm);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetViewAdm", ReplyAction="http://tempuri.org/IAdmService/GetViewAdmResponse")]
-        ChikitoExpressAdm.ServiceReference.ViewAdministradore GetViewAdm(int value);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetViewAdm", ReplyAction="http://tempuri.org/IAdmService/GetViewAdmResponse")]
-        System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.ViewAdministradore> GetViewAdmAsync(int value);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/GetProvencias", ReplyAction="http://tempuri.org/IAdmService/GetProvenciasResponse")]
         ChikitoExpressAdm.ServiceReference.Provencia[] GetProvencias();
         
@@ -5092,10 +4447,10 @@ namespace ChikitoExpressAdm.ServiceReference {
         System.Threading.Tasks.Task ActualizarClienteAsync(ChikitoExpressAdm.ServiceReference.Cliente cliente, int iduser);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarBebida", ReplyAction="http://tempuri.org/IAdmService/ActualizarBebidaResponse")]
-        void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida);
+        void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida, int idMenu);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarBebida", ReplyAction="http://tempuri.org/IAdmService/ActualizarBebidaResponse")]
-        System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida);
+        System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida, int idMenu);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmService/ActualizarPlato", ReplyAction="http://tempuri.org/IAdmService/ActualizarPlatoResponse")]
         void ActualizarPlato(int id, ChikitoExpressAdm.ServiceReference.Plato plat);
@@ -5129,6 +4484,38 @@ namespace ChikitoExpressAdm.ServiceReference {
         
         public AdmServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public void PostElementosDeMenu(ChikitoExpressAdm.ServiceReference.ElementosDeMenu e) {
+            base.Channel.PostElementosDeMenu(e);
+        }
+        
+        public System.Threading.Tasks.Task PostElementosDeMenuAsync(ChikitoExpressAdm.ServiceReference.ElementosDeMenu e) {
+            return base.Channel.PostElementosDeMenuAsync(e);
+        }
+        
+        public ChikitoExpressAdm.ServiceReference.ElementosDeMenu[] GetElementosDeMenu() {
+            return base.Channel.GetElementosDeMenu();
+        }
+        
+        public System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.ElementosDeMenu[]> GetElementosDeMenuAsync() {
+            return base.Channel.GetElementosDeMenuAsync();
+        }
+        
+        public ChikitoExpressAdm.ServiceReference.Menu[] GetMenu() {
+            return base.Channel.GetMenu();
+        }
+        
+        public System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.Menu[]> GetMenuAsync() {
+            return base.Channel.GetMenuAsync();
+        }
+        
+        public void PostMenu(ChikitoExpressAdm.ServiceReference.Menu m) {
+            base.Channel.PostMenu(m);
+        }
+        
+        public System.Threading.Tasks.Task PostMenuAsync(ChikitoExpressAdm.ServiceReference.Menu m) {
+            return base.Channel.PostMenuAsync(m);
         }
         
         public ChikitoExpressAdm.ServiceReference.TiposPlato[] GetTipoPlatos() {
@@ -5291,14 +4678,6 @@ namespace ChikitoExpressAdm.ServiceReference {
             return base.Channel.PostAdministradorAsync(adm);
         }
         
-        public ChikitoExpressAdm.ServiceReference.ViewAdministradore GetViewAdm(int value) {
-            return base.Channel.GetViewAdm(value);
-        }
-        
-        public System.Threading.Tasks.Task<ChikitoExpressAdm.ServiceReference.ViewAdministradore> GetViewAdmAsync(int value) {
-            return base.Channel.GetViewAdmAsync(value);
-        }
-        
         public ChikitoExpressAdm.ServiceReference.Provencia[] GetProvencias() {
             return base.Channel.GetProvencias();
         }
@@ -5403,12 +4782,12 @@ namespace ChikitoExpressAdm.ServiceReference {
             return base.Channel.ActualizarClienteAsync(cliente, iduser);
         }
         
-        public void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida) {
-            base.Channel.ActualizarBebida(id, bebida);
+        public void ActualizarBebida(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida, int idMenu) {
+            base.Channel.ActualizarBebida(id, bebida, idMenu);
         }
         
-        public System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida) {
-            return base.Channel.ActualizarBebidaAsync(id, bebida);
+        public System.Threading.Tasks.Task ActualizarBebidaAsync(int id, ChikitoExpressAdm.ServiceReference.Bebida bebida, int idMenu) {
+            return base.Channel.ActualizarBebidaAsync(id, bebida, idMenu);
         }
         
         public void ActualizarPlato(int id, ChikitoExpressAdm.ServiceReference.Plato plat) {

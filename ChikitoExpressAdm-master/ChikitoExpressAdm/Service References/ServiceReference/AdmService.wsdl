@@ -7,6 +7,30 @@
       <xsd:import schemaLocation="http://localhost:49590/AdmService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ChikitoExpressService" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IAdmService_PostElementosDeMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostElementosDeMenu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostElementosDeMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostElementosDeMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetElementosDeMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetElementosDeMenu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetElementosDeMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetElementosDeMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_GetMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostMenu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmService_PostMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostMenuResponse" />
+  </wsdl:message>
   <wsdl:message name="IAdmService_GetTipoPlatos_InputMessage">
     <wsdl:part name="parameters" element="tns:GetTipoPlatos" />
   </wsdl:message>
@@ -127,12 +151,6 @@
   <wsdl:message name="IAdmService_PostAdministrador_OutputMessage">
     <wsdl:part name="parameters" element="tns:PostAdministradorResponse" />
   </wsdl:message>
-  <wsdl:message name="IAdmService_GetViewAdm_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetViewAdm" />
-  </wsdl:message>
-  <wsdl:message name="IAdmService_GetViewAdm_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetViewAdmResponse" />
-  </wsdl:message>
   <wsdl:message name="IAdmService_GetProvencias_InputMessage">
     <wsdl:part name="parameters" element="tns:GetProvencias" />
   </wsdl:message>
@@ -224,6 +242,22 @@
     <wsdl:part name="parameters" element="tns:ActualizarPlatoResponse" />
   </wsdl:message>
   <wsdl:portType name="IAdmService">
+    <wsdl:operation name="PostElementosDeMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostElementosDeMenu" message="tns:IAdmService_PostElementosDeMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostElementosDeMenuResponse" message="tns:IAdmService_PostElementosDeMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetElementosDeMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetElementosDeMenu" message="tns:IAdmService_GetElementosDeMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetElementosDeMenuResponse" message="tns:IAdmService_GetElementosDeMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetMenu" message="tns:IAdmService_GetMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetMenuResponse" message="tns:IAdmService_GetMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostMenu" message="tns:IAdmService_PostMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostMenuResponse" message="tns:IAdmService_PostMenu_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetTipoPlatos">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetTipoPlatos" message="tns:IAdmService_GetTipoPlatos_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetTipoPlatosResponse" message="tns:IAdmService_GetTipoPlatos_OutputMessage" />
@@ -304,10 +338,6 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/PostAdministrador" message="tns:IAdmService_PostAdministrador_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/PostAdministradorResponse" message="tns:IAdmService_PostAdministrador_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetViewAdm">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetViewAdm" message="tns:IAdmService_GetViewAdm_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetViewAdmResponse" message="tns:IAdmService_GetViewAdm_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="GetProvencias">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmService/GetProvencias" message="tns:IAdmService_GetProvencias_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmService/GetProvenciasResponse" message="tns:IAdmService_GetProvencias_OutputMessage" />
@@ -371,6 +401,42 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAdmService" type="tns:IAdmService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PostElementosDeMenu">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostElementosDeMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElementosDeMenu">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetElementosDeMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenu">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/GetMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMenu">
+      <soap:operation soapAction="http://tempuri.org/IAdmService/PostMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetTipoPlatos">
       <soap:operation soapAction="http://tempuri.org/IAdmService/GetTipoPlatos" style="document" />
       <wsdl:input>
@@ -544,15 +610,6 @@
     </wsdl:operation>
     <wsdl:operation name="PostAdministrador">
       <soap:operation soapAction="http://tempuri.org/IAdmService/PostAdministrador" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetViewAdm">
-      <soap:operation soapAction="http://tempuri.org/IAdmService/GetViewAdm" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

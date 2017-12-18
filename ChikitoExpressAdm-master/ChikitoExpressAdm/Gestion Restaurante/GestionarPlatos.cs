@@ -41,6 +41,13 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
             {
                 strTipoBebidas.Add(t.nombre);
             }
+            var vPlatos = client.GetMenu();
+            List<String> strPlato = new List<string>();
+            foreach (var p in vPlatos)
+            {
+                strPlato.Add(p.nombre);
+            }
+            comboBoxMenu.DataSource = strPlato;
             comboBoxTipoPlato.DataSource = strTipoBebidas;
         }
         private void UpdateDataGridViewPlato()
@@ -104,7 +111,17 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
                 descripcion = textBoxDescripcion.Text,
                 idTipoPlato = tipoPlatos.ElementAt(comboBoxTipoPlato.SelectedIndex).idTipoPlato
             };
-            client.PostPlatos(plato);
+
+            var menus = client.GetMenu();
+            var plates = client.GetPlato();
+            ElementosDeMenu elementosDeMenu = new ElementosDeMenu
+            {
+                idPlato = plato.idPlato,
+                Plato = plato,
+                idMenu = menus.ElementAt(comboBoxMenu.SelectedIndex).idMenu,
+                disponible = true
+            };
+            client.PostElementosDeMenu(elementosDeMenu);
             UpdateDataGridViewPlato();
         }
 
@@ -123,6 +140,42 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
             };
             client.ActualizarPlato(plat.ElementAt(dataGridViewPlato.CurrentRow.Index).idPlato, plato);
             UpdateDataGridViewPlato();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ResetAllControls(this);
+        }
+        public static void ResetAllControls(Control form)
+        {
+            foreach (Control control in form.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = null;
+                }
+
+                if (control is ComboBox)
+                {
+                    ComboBox comboBox = (ComboBox)control;
+                    if (comboBox.Items.Count > 0)
+                        comboBox.SelectedIndex = 0;
+                }
+
+                if (control is CheckBox)
+                {
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false;
+                }
+
+                if (control is ListBox)
+                {
+                    ListBox listBox = (ListBox)control;
+                    listBox.ClearSelected();
+                }
+            }
         }
     }
 }

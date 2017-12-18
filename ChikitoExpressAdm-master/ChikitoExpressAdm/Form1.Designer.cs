@@ -46,15 +46,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBebida = new System.Windows.Forms.Panel();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.buttonPlatoLeft = new System.Windows.Forms.Button();
             this.buttonPlatoRight = new System.Windows.Forms.Button();
             this.buttonBebidaLeft = new System.Windows.Forms.Button();
@@ -79,17 +78,12 @@
             this.crearToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionEnviosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.realizarEnvioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionSurcusalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuperarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comboBoxMenu = new System.Windows.Forms.ComboBox();
             this.comboBoxTipoPlato = new System.Windows.Forms.ComboBox();
             this.comboBoxTipoBebida = new System.Windows.Forms.ComboBox();
+            this.buttonFiltrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelPlato.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -101,14 +95,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBebida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,7 +114,7 @@
             this.panel1.Controls.Add(this.buttonLogin);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(94, 117);
+            this.panel1.Location = new System.Drawing.Point(155, 104);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(134, 262);
             this.panel1.TabIndex = 9;
@@ -190,6 +184,7 @@
             this.panelPlato.Controls.Add(this.pictureBox5);
             this.panelPlato.Controls.Add(this.pictureBox4);
             this.panelPlato.Controls.Add(this.pictureBox3);
+            this.panelPlato.Controls.Add(this.panel1);
             this.panelPlato.Controls.Add(this.pictureBox2);
             this.panelPlato.Controls.Add(this.pictureBox1);
             this.panelPlato.Location = new System.Drawing.Point(12, 27);
@@ -272,33 +267,43 @@
             // panelBebida
             // 
             this.panelBebida.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelBebida.Controls.Add(this.vScrollBar2);
+            this.panelBebida.Controls.Add(this.pictureBox13);
+            this.panelBebida.Controls.Add(this.pictureBox11);
             this.panelBebida.Controls.Add(this.pictureBox9);
             this.panelBebida.Controls.Add(this.pictureBox10);
-            this.panelBebida.Controls.Add(this.pictureBox16);
-            this.panelBebida.Controls.Add(this.pictureBox11);
-            this.panelBebida.Controls.Add(this.pictureBox15);
-            this.panelBebida.Controls.Add(this.panel1);
             this.panelBebida.Controls.Add(this.pictureBox12);
             this.panelBebida.Controls.Add(this.pictureBox14);
-            this.panelBebida.Controls.Add(this.pictureBox13);
+            this.panelBebida.Controls.Add(this.pictureBox16);
+            this.panelBebida.Controls.Add(this.pictureBox15);
             this.panelBebida.Location = new System.Drawing.Point(547, 32);
             this.panelBebida.Name = "panelBebida";
             this.panelBebida.Size = new System.Drawing.Size(361, 476);
             this.panelBebida.TabIndex = 11;
             // 
-            // vScrollBar2
+            // pictureBox13
             // 
-            this.vScrollBar2.Location = new System.Drawing.Point(341, 3);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(17, 471);
-            this.vScrollBar2.TabIndex = 17;
+            this.pictureBox13.Location = new System.Drawing.Point(170, 117);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 12;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(170, 231);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 14;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Location = new System.Drawing.Point(170, 345);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 16;
             this.pictureBox9.TabStop = false;
             // 
@@ -307,38 +312,16 @@
             this.pictureBox10.Location = new System.Drawing.Point(3, 345);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 15;
             this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(161, 108);
-            this.pictureBox16.TabIndex = 9;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Location = new System.Drawing.Point(170, 231);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(161, 108);
-            this.pictureBox11.TabIndex = 14;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Location = new System.Drawing.Point(170, 3);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(161, 108);
-            this.pictureBox15.TabIndex = 10;
-            this.pictureBox15.TabStop = false;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Location = new System.Drawing.Point(3, 231);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 13;
             this.pictureBox12.TabStop = false;
             // 
@@ -347,16 +330,27 @@
             this.pictureBox14.Location = new System.Drawing.Point(3, 117);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 11;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox13
+            // pictureBox16
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(170, 117);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(161, 108);
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
+            this.pictureBox16.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 9;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Location = new System.Drawing.Point(170, 3);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(161, 108);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 10;
+            this.pictureBox15.TabStop = false;
             // 
             // buttonPlatoLeft
             // 
@@ -380,6 +374,7 @@
             this.buttonPlatoRight.Size = new System.Drawing.Size(75, 50);
             this.buttonPlatoRight.TabIndex = 13;
             this.buttonPlatoRight.UseVisualStyleBackColor = false;
+            this.buttonPlatoRight.Click += new System.EventHandler(this.buttonPlatoRight_Click);
             // 
             // buttonBebidaLeft
             // 
@@ -391,6 +386,7 @@
             this.buttonBebidaLeft.Size = new System.Drawing.Size(75, 50);
             this.buttonBebidaLeft.TabIndex = 14;
             this.buttonBebidaLeft.UseVisualStyleBackColor = false;
+            this.buttonBebidaLeft.Click += new System.EventHandler(this.buttonBebidaLeft_Click);
             // 
             // buttonBebidaRight
             // 
@@ -402,6 +398,7 @@
             this.buttonBebidaRight.Size = new System.Drawing.Size(75, 50);
             this.buttonBebidaRight.TabIndex = 15;
             this.buttonBebidaRight.UseVisualStyleBackColor = false;
+            this.buttonBebidaRight.Click += new System.EventHandler(this.buttonBebidaRight_Click);
             // 
             // gestionLugaresToolStripMenuItem
             // 
@@ -494,8 +491,8 @@
             this.gestionMenuToolStripMenuItem,
             this.gestionOrdenesToolStripMenuItem});
             this.gestionRestoranteToolStripMenuItem.Name = "gestionRestoranteToolStripMenuItem";
-            this.gestionRestoranteToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.gestionRestoranteToolStripMenuItem.Text = "Gestion Restorante";
+            this.gestionRestoranteToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
+            this.gestionRestoranteToolStripMenuItem.Text = "Gestion Restaurante";
             // 
             // gestionMenuToolStripMenuItem
             // 
@@ -553,58 +550,17 @@
             // gestionOrdenesToolStripMenuItem
             // 
             this.gestionOrdenesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actualizarOrdenToolStripMenuItem,
             this.realizarOrdenToolStripMenuItem});
             this.gestionOrdenesToolStripMenuItem.Name = "gestionOrdenesToolStripMenuItem";
             this.gestionOrdenesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.gestionOrdenesToolStripMenuItem.Text = "Gestion Ordenes";
             // 
-            // actualizarOrdenToolStripMenuItem
-            // 
-            this.actualizarOrdenToolStripMenuItem.Name = "actualizarOrdenToolStripMenuItem";
-            this.actualizarOrdenToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.actualizarOrdenToolStripMenuItem.Text = "Actualizar Orden";
-            // 
             // realizarOrdenToolStripMenuItem
             // 
             this.realizarOrdenToolStripMenuItem.Name = "realizarOrdenToolStripMenuItem";
-            this.realizarOrdenToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.realizarOrdenToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.realizarOrdenToolStripMenuItem.Text = "Realizar Orden";
-            // 
-            // gestionEnviosToolStripMenuItem
-            // 
-            this.gestionEnviosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.realizarEnvioToolStripMenuItem,
-            this.gestionSurcusalesToolStripMenuItem});
-            this.gestionEnviosToolStripMenuItem.Name = "gestionEnviosToolStripMenuItem";
-            this.gestionEnviosToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.gestionEnviosToolStripMenuItem.Text = "Gestion Envios";
-            // 
-            // realizarEnvioToolStripMenuItem
-            // 
-            this.realizarEnvioToolStripMenuItem.Name = "realizarEnvioToolStripMenuItem";
-            this.realizarEnvioToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.realizarEnvioToolStripMenuItem.Text = "Realizar envio";
-            // 
-            // gestionSurcusalesToolStripMenuItem
-            // 
-            this.gestionSurcusalesToolStripMenuItem.Name = "gestionSurcusalesToolStripMenuItem";
-            this.gestionSurcusalesToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.gestionSurcusalesToolStripMenuItem.Text = "Gestion Surcusales";
-            // 
-            // datosToolStripMenuItem
-            // 
-            this.datosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.recuperarDatosToolStripMenuItem});
-            this.datosToolStripMenuItem.Name = "datosToolStripMenuItem";
-            this.datosToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.datosToolStripMenuItem.Text = "Datos";
-            // 
-            // recuperarDatosToolStripMenuItem
-            // 
-            this.recuperarDatosToolStripMenuItem.Name = "recuperarDatosToolStripMenuItem";
-            this.recuperarDatosToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.recuperarDatosToolStripMenuItem.Text = "Recuperar Datos";
+            this.realizarOrdenToolStripMenuItem.Click += new System.EventHandler(this.realizarOrdenToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -612,9 +568,7 @@
             this.gestionLugaresToolStripMenuItem,
             this.gestionClientesToolStripMenuItem,
             this.gestionAdmToolStripMenuItem,
-            this.gestionRestoranteToolStripMenuItem,
-            this.gestionEnviosToolStripMenuItem,
-            this.datosToolStripMenuItem});
+            this.gestionRestoranteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(920, 24);
@@ -645,11 +599,22 @@
             this.comboBoxTipoBebida.Size = new System.Drawing.Size(162, 21);
             this.comboBoxTipoBebida.TabIndex = 19;
             // 
+            // buttonFiltrar
+            // 
+            this.buttonFiltrar.Location = new System.Drawing.Point(399, 273);
+            this.buttonFiltrar.Name = "buttonFiltrar";
+            this.buttonFiltrar.Size = new System.Drawing.Size(106, 31);
+            this.buttonFiltrar.TabIndex = 20;
+            this.buttonFiltrar.Text = "Filtrar";
+            this.buttonFiltrar.UseVisualStyleBackColor = true;
+            this.buttonFiltrar.Click += new System.EventHandler(this.buttonFiltrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 510);
+            this.Controls.Add(this.buttonFiltrar);
             this.Controls.Add(this.comboBoxTipoBebida);
             this.Controls.Add(this.comboBoxTipoPlato);
             this.Controls.Add(this.comboBoxMenu);
@@ -675,14 +640,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBebida.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -716,7 +681,6 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Button buttonPlatoLeft;
         private System.Windows.Forms.Button buttonPlatoRight;
         private System.Windows.Forms.Button buttonBebidaLeft;
@@ -741,17 +705,12 @@
         private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem gestionOrdenesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarOrdenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarOrdenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestionEnviosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem realizarEnvioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestionSurcusalesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem datosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem recuperarDatosToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ComboBox comboBoxMenu;
         private System.Windows.Forms.ComboBox comboBoxTipoPlato;
         private System.Windows.Forms.ComboBox comboBoxTipoBebida;
+        private System.Windows.Forms.Button buttonFiltrar;
     }
 }
 

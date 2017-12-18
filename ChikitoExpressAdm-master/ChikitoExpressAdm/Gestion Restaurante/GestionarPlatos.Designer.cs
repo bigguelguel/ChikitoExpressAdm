@@ -44,6 +44,9 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBoxPlato = new System.Windows.Forms.PictureBox();
             this.buttonImagen = new System.Windows.Forms.Button();
+            this.comboBoxMenu = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPlato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlato)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +115,7 @@
             // 
             // textBoxPrecio
             // 
-            this.textBoxPrecio.Location = new System.Drawing.Point(280, 133);
+            this.textBoxPrecio.Location = new System.Drawing.Point(280, 145);
             this.textBoxPrecio.Name = "textBoxPrecio";
             this.textBoxPrecio.Size = new System.Drawing.Size(106, 20);
             this.textBoxPrecio.TabIndex = 28;
@@ -121,7 +124,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(75, 133);
+            this.label4.Location = new System.Drawing.Point(75, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 24);
             this.label4.TabIndex = 27;
@@ -130,7 +133,7 @@
             // comboBoxTipoPlato
             // 
             this.comboBoxTipoPlato.FormattingEnabled = true;
-            this.comboBoxTipoPlato.Location = new System.Drawing.Point(280, 90);
+            this.comboBoxTipoPlato.Location = new System.Drawing.Point(280, 77);
             this.comboBoxTipoPlato.Name = "comboBoxTipoPlato";
             this.comboBoxTipoPlato.Size = new System.Drawing.Size(183, 21);
             this.comboBoxTipoPlato.TabIndex = 26;
@@ -146,7 +149,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 90);
+            this.label3.Location = new System.Drawing.Point(75, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 24);
             this.label3.TabIndex = 24;
@@ -175,7 +178,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(430, 135);
+            this.checkBox1.Location = new System.Drawing.Point(430, 148);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(59, 17);
             this.checkBox1.TabIndex = 36;
@@ -203,11 +206,42 @@
             this.buttonImagen.UseVisualStyleBackColor = true;
             this.buttonImagen.Click += new System.EventHandler(this.buttonImagen_Click);
             // 
+            // comboBoxMenu
+            // 
+            this.comboBoxMenu.FormattingEnabled = true;
+            this.comboBoxMenu.Location = new System.Drawing.Point(280, 104);
+            this.comboBoxMenu.Name = "comboBoxMenu";
+            this.comboBoxMenu.Size = new System.Drawing.Size(183, 21);
+            this.comboBoxMenu.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(75, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 24);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Menu: ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(75, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GestionarPlatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 556);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBoxMenu);
             this.Controls.Add(this.buttonImagen);
             this.Controls.Add(this.pictureBoxPlato);
             this.Controls.Add(this.checkBox1);
@@ -251,5 +285,8 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBoxPlato;
         private System.Windows.Forms.Button buttonImagen;
+        private System.Windows.Forms.ComboBox comboBoxMenu;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

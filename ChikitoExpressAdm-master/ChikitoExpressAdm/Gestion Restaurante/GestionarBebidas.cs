@@ -17,11 +17,13 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
         AdmServiceClient client;
         public string Imagen { get; set; }
         List<Boison> boisones;
+        List<ServiceReference.Menu> Menus;
         public GestionarBebidas()
         {
             InitializeComponent();
             client = new AdmServiceClient();
             boisones = new List<Boison>();
+            Menus = new List<ServiceReference.Menu>();
             UpdateComboBoxTiboBebida();
             UpdateDataGridViewBebida();
             
@@ -31,6 +33,7 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
             public String Nombre { get; set; }
             public int Precio { get; set; }
             public string Categoria { get; set; }
+            public String Menu { get; set; }
             public string Descripcion { get; set; }
             public bool Estado { get; set; }
             
@@ -44,7 +47,14 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
             {
                 strTipoBebidas.Add(t.nombre);
             }
+            var menus = client.GetMenu();
+            List<String> strMenu = new List<string>();
+            foreach(var m in menus)
+            {
+                strMenu.Add(m.nombre);
+            }
             comboBoxTipoBebida.DataSource = strTipoBebidas;
+            comboBoxMenu.DataSource = strMenu;
         }
 
         private void buttonImagen_Click(object sender, EventArgs e)
@@ -70,15 +80,19 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
         {
             var bebidas = client.GetBebida();
             var tipoBebidas = client.GetTipoBebidas();
+            var menus = client.GetMenu();
+            var elemento = client.GetElementosDeMenu();
             boisones = new List<Boison>();
             foreach(var b in bebidas)
             {
+                int id = (int)(from e in elemento where e.idBebida == b.idBebida select e.idMenu).ElementAt(0);
                 Boison bo = new Boison
                 {
                     Nombre = b.Nombre,
                     Precio = b.precio,
                     Categoria = (from t in tipoBebidas where t.idTipoBebida == b.idTipoBebida select t.nombre).ElementAt(0),
                     Estado = b.estado,
+                    Menu = (from m in menus where m.idMenu == id select m.nombre).ElementAt(0),
                     Descripcion = b.descripcion
                 };
                 boisones.Add(bo);
@@ -101,6 +115,7 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
         {
             var tipoBebidas = client.GetTipoBebidas();
             var beb = client.GetBebida();
+            var menu = client.GetMenu();
             Bebida bebida = new Bebida
             {
                 Nombre = textBoxNombre.Text,
@@ -110,13 +125,15 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
                 descripcion = textBoxDescripcion.Text,
                 idTipoBebida = tipoBebidas.ElementAt(comboBoxTipoBebida.SelectedIndex).idTipoBebida
             };
-            client.ActualizarBebida(beb.ElementAt(dataGridViewBebida.CurrentRow.Index).idBebida, bebida);
+            client.ActualizarBebida(beb.ElementAt(dataGridViewBebida.CurrentRow.Index).idBebida, bebida, menu.ElementAt(comboBoxMenu.SelectedIndex).idMenu);
+           
             UpdateDataGridViewBebida();
         }
 
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             var tipoBebidas = client.GetTipoBebidas();
+            var menus = client.GetMenu(); 
             Bebida bebida = new Bebida
             {
                 Nombre = textBoxNombre.Text,
@@ -126,8 +143,55 @@ namespace ChikitoExpressAdm.Gestion_Restaurante
                 descripcion = textBoxDescripcion.Text,
                 idTipoBebida = tipoBebidas.ElementAt(comboBoxTipoBebida.SelectedIndex).idTipoBebida
             };
-            client.PostBebida(bebida);
+            ElementosDeMenu elementosDeMenu = new ElementosDeMenu
+            {
+                idBebida = bebida.idBebida,
+                Bebida = bebida,
+                idMenu = menus.ElementAt(comboBoxMenu.SelectedIndex).idMenu,
+                disponible = true
+            };
+            client.PostElementosDeMenu(elementosDeMenu);
             UpdateDataGridViewBebida();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ResetAllControls(this);
+        }
+        public static void ResetAllControls(Control form)
+        {
+            foreach (Control control in form.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = null;
+                }
+
+                if (control is ComboBox)
+                {
+                    ComboBox comboBox = (ComboBox)control;
+                    if (comboBox.Items.Count > 0)
+                        comboBox.SelectedIndex = 0;
+                }
+
+                if (control is CheckBox)
+                {
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false;
+                }
+
+                if (control is ListBox)
+                {
+                    ListBox listBox = (ListBox)control;
+                    listBox.ClearSelected();
+                }
+            }
+        }
+
+        private void GestionarBebidas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
